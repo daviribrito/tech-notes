@@ -1,6 +1,6 @@
 # Backend
 
-Documentação e anotações sobre backend, APIs, Spring Boot, autenticação e arquitetura de software.
+Documentação e anotações sobre backend, APIs, Spring Boot, Autenticação e Arquitetura de Software.
 
 ---
 
