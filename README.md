@@ -10,7 +10,7 @@ O objetivo é organizar conceitos teóricos, fluxos, diagramas e exemplos práti
 
 <img src="./assets/icons/java.svg" width="55"/>
 <img src="./assets/icons/spring.svg" width="55"/>
-<img src="./assets/icons/node.svg" width="55"/>
+<img src="./assets/icons/nodejs.svg" width="55"/>
 <img src="./assets/icons/javascript.svg" width="55"/>
 <img src="./assets/icons/react.svg" width="55"/>
 <img src="./assets/icons/nextjs.svg" width="55"/>
