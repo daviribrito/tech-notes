@@ -1,3 +1,5 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0f172a,100:2563eb"/>
+
 # Software Engineering Notes
 
 Repositório criado para documentar meus estudos em desenvolvimento de software, backend, frontend, banco de dados, infraestrutura e cloud.
