@@ -3,13 +3,20 @@
 Repositório criado para documentar meus estudos em desenvolvimento de software, backend, frontend, banco de dados, infraestrutura e cloud.
 
 O objetivo é organizar conceitos teóricos, fluxos, diagramas e exemplos práticos que demonstrem minha evolução técnica como desenvolvedor Fullstack.
----
+
+## Tech Stack
+
 <div align="center">
 
 <img src="./assets/icons/java.svg" width="55"/>
 <img src="./assets/icons/spring.svg" width="55"/>
+<img src="./assets/icons/node.svg" width="55"/>
+<img src="./assets/icons/javascript.svg" width="55"/>
 <img src="./assets/icons/react.svg" width="55"/>
+<img src="./assets/icons/nextjs.svg" width="55"/>
 <img src="./assets/icons/docker.svg" width="55"/>
+<img src="./assets/icons/mysql.svg" width="55"/>
+<img src="./assets/icons/aws.svg" width="55"/>
 
 </div> 
 
