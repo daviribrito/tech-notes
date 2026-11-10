@@ -43,3 +43,13 @@ O objetivo é organizar conceitos teóricos, fluxos, diagramas e exemplos práti
 | Infra & Cloud | Docker, deploy, cloud |
 | Diagrams | Fluxos visuais e arquitetura |
 | Roadmap | Uma nota por tópico do [portfólio](https://daviribrito.github.io/portfolio/roadmap.html), gerada automaticamente em `roadmap/` |
+
+<!-- roadmap:inicio -->
+## Roadmap
+
+Sincronizado com o [roadmap do portfólio](https://daviribrito.github.io/portfolio/roadmap.html): 3 de 9 tópicos dominados. Índice completo em [roadmap/](roadmap/README.md).
+
+- **Fundamentos de backend:** [Paginação por cursor](roadmap/fundamentos/paginacao.md) · [APIs REST com Node.js e PostgreSQL](roadmap/fundamentos/fundamentos-api.md)
+- **Confiabilidade:** [Retry com backoff](roadmap/confiabilidade/retry.md) · [Idempotência](roadmap/confiabilidade/idempotencia.md) · [Circuit breaker](roadmap/confiabilidade/circuit-breaker.md) · [Rate limiting](roadmap/confiabilidade/rate-limiting.md)
+- **Sistemas distribuídos:** [Transactional outbox](roadmap/distribuidos/outbox.md) · [Sagas e compensação](roadmap/distribuidos/sagas.md) · [Consistência eventual](roadmap/distribuidos/consistencia.md)
+<!-- roadmap:fim -->
