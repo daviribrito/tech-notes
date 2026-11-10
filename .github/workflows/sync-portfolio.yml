@@ -1,0 +1,51 @@
+# Mantém a pasta roadmap/ igual ao roadmap do portfólio (daviribrito/portfolio).
+# Roda:
+#   - na hora, quando o portfólio avisa (repository_dispatch, ver README);
+#   - a cada hora, como garantia;
+#   - manualmente, em Actions → "Sincronizar com o portfólio" → Run workflow;
+#   - quando este workflow ou o script mudam.
+name: Sincronizar com o portfólio
+
+on:
+  repository_dispatch:
+    types: [portfolio-atualizado]
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/sync-portfolio.mjs"
+      - ".github/workflows/sync-portfolio.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-portfolio
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Gerar notas a partir do portfólio
+        run: node scripts/sync-portfolio.mjs
+
+      - name: Commitar se algo mudou
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sincroniza notas com o roadmap do portfólio"
+          git push

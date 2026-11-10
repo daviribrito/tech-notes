@@ -42,3 +42,4 @@ O objetivo é organizar conceitos teóricos, fluxos, diagramas e exemplos práti
 | Database | SQL, modelagem, índices |
 | Infra & Cloud | Docker, deploy, cloud |
 | Diagrams | Fluxos visuais e arquitetura |
+| Roadmap | Uma nota por tópico do [portfólio](https://daviribrito.github.io/portfolio/roadmap.html), gerada automaticamente em `roadmap/` |
