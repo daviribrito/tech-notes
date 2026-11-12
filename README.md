@@ -47,6 +47,17 @@ O objetivo é organizar conceitos teóricos, fluxos, diagramas e exemplos práti
 <!-- roadmap:inicio -->
 ## Roadmap
 
-Sincronizado com o [roadmap do portfólio](https://daviribrito.github.io/portfolio/roadmap.html): 0 de 0 tópicos dominados. Índice completo em [roadmap/](roadmap/README.md).
+Sincronizado com o [roadmap do portfólio](https://daviribrito.github.io/portfolio/roadmap.html): 0 de 186 tópicos dominados (0%). Índice completo em [roadmap/](roadmap/README.md).
 
+- [01 Matemática e fundamentos matemáticos](roadmap/matematica/README.md) · 0%
+- [02 Ciência da Computação e fundamentos computacionais](roadmap/computacao/README.md) · 0%
+- [03 Linguagens de programação e runtime](roadmap/linguagem/README.md) · 0%
+- [04 Memória, hardware e sistemas operacionais](roadmap/sistemas/README.md) · 0%
+- [05 Redes de computadores e comunicação](roadmap/redes/README.md) · 0%
+- [06 Banco de dados e persistência](roadmap/banco/README.md) · 0%
+- [07 Engenharia Backend e desenvolvimento de APIs](roadmap/backend/README.md) · 0%
+- [08 Engenharia de software e arquitetura](roadmap/engenharia/README.md) · 0%
+- [09 Segurança, observabilidade e confiabilidade](roadmap/confiabilidade/README.md) · 0%
+- [10 DevOps, infraestrutura e Cloud](roadmap/devops/README.md) · 0%
+- [11 Sistemas distribuídos e System Design](roadmap/distribuidos/README.md) · 0%
 <!-- roadmap:fim -->
