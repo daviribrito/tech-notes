@@ -1,11 +1,12 @@
 // Gera as notas do roadmap a partir do portfólio (daviribrito/portfolio).
 //
-// Fonte única: data/roadmap.js e data/config.js do portfólio.
-// Para cada tópico, escreve roadmap/<fase>/<id>.md, mais roadmap/README.md
-// (índice) e a seção "Roadmap" do README principal.
+// Fontes: data/roadmap.js (estrutura: áreas e tópicos), data/estudos.js
+// (progresso e anotações) e data/config.js do portfólio.
+// Para cada tópico escreve roadmap/<area>/<id>.md, mais o índice
+// roadmap/README.md e a seção "Roadmap" do README principal.
 //
-// Arquivos gerados levam o marcador GERADO no topo. Só esses são apagados
-// quando o tópico some do portfólio; notas escritas à mão nunca são tocadas.
+// Arquivos gerados levam o marcador GERADO no topo. Só esses são atualizados
+// ou apagados; notas escritas à mão nunca são tocadas.
 //
 // Uso: node scripts/sync-portfolio.mjs
 // Variáveis opcionais: PORTFOLIO_REPO (padrão daviribrito/portfolio), PORTFOLIO_BRANCH (main).
@@ -19,84 +20,156 @@ const BRANCH = process.env.PORTFOLIO_BRANCH || "main";
 const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}/`;
 const [owner, name] = REPO.split("/");
 const SITE = `https://${owner}.github.io/${name}/`;
-const GERADO = "<!-- GERADO a partir do portfólio. Edite em " + REPO + "/data/roadmap.js -->";
-const STATUS = { dominado: "✅ Dominado", estudando: "🟡 Estudando", proximo: "⚪ Próximo" };
+const GERADO = "<!-- GERADO a partir do portfólio. Estrutura em " + REPO + "/data/roadmap.js, estudos em data/estudos.js -->";
 
-async function load(file, globalName) {
+const ESTADOS = { "nao-iniciado": "⚪ Não iniciado", estudo: "🟡 Em estudo", pratica: "🔵 Em prática", dominado: "🟢 Dominado", revisar: "🔁 Revisar" };
+const IMPORTANCIA = { essencial: "Essencial", importante: "Importante", complementar: "Complementar" };
+
+async function load(file, globalName, optional) {
   const res = await fetch(RAW + file + "?t=" + Date.now(), { headers: { "Cache-Control": "no-cache" } });
-  if (!res.ok) throw new Error(`Não consegui baixar ${file}: HTTP ${res.status}`);
+  if (!res.ok) {
+    if (optional && res.status === 404) return null;
+    throw new Error(`Não consegui baixar ${file}: HTTP ${res.status}`);
+  }
   const ctx = { window: {} };
   vm.runInNewContext(await res.text(), ctx, { filename: file, timeout: 2000 });
   if (!ctx.window[globalName]) throw new Error(`${file} não definiu window.${globalName}`);
   return ctx.window[globalName];
 }
 
-const topicUrl = (id) => SITE + "topico.html?id=" + encodeURIComponent(id);
-const bar = (p) => "█".repeat(Math.round(p / 10)) + "░".repeat(10 - Math.round(p / 10));
+const R = await load("data/roadmap.js", "ROADMAP");
+const E = (await load("data/estudos.js", "ESTUDOS", true)) || {};
+const cfg = await load("data/config.js", "SITE_CONFIG");
+const PASTA = (cfg.techNotes && cfg.techNotes.pasta) || "roadmap";
 
-function nota(R, t) {
-  const fase = R.fases.find((f) => f.id === t.fase);
-  const linhas = [
+const areas = R.areas || [];
+const status = E.status || {};
+const conteudo = E.conteudo || {};
+const topicos = (R.topicos || []).map((t) => ({
+  pre: [], aprender: [], ...t, ...(conteudo[t.id] || {}),
+  status: ESTADOS[status[t.id]] ? status[t.id] : "nao-iniciado"
+}));
+const byId = Object.fromEntries(topicos.map((t) => [t.id, t]));
+const area = (id) => areas.find((a) => a.id === id) || { id, numero: "", nome: id };
+const concluido = (t) => t.status === "dominado" || t.status === "revisar";
+const pct = (list) => (list.length ? Math.round((list.filter(concluido).length / list.length) * 100) : 0);
+const bar = (p) => "█".repeat(Math.round(p / 10)) + "░".repeat(10 - Math.round(p / 10));
+const topicUrl = (id) => SITE + "topico.html?id=" + encodeURIComponent(id);
+const areaUrl = (id) => SITE + "area.html?id=" + encodeURIComponent(id);
+const nivelNome = (n) => n + " · " + ((R.niveis && R.niveis[n] && R.niveis[n].nome) || "");
+
+// Validação: ids únicos e no formato usado nos caminhos.
+const vistos = new Set();
+for (const t of topicos) {
+  if (!/^[a-z0-9-]+$/.test(t.id)) throw new Error(`id inválido no roadmap: "${t.id}" (use letras minúsculas, números e hífen)`);
+  if (vistos.has(t.id)) throw new Error(`id repetido no roadmap: "${t.id}"`);
+  vistos.add(t.id);
+}
+
+function nota(t) {
+  const a = area(t.area);
+  const rel = (ids) => ids.map((id) => byId[id]).filter(Boolean)
+    .map((x) => `- [${x.nome}](../${x.area}/${x.id}.md) · ${ESTADOS[x.status]}`);
+  const libera = topicos.filter((x) => x.pre.includes(t.id)).map((x) => x.id);
+  const L = [
     GERADO,
     "",
     `# ${t.nome}`,
     "",
-    `> ${t.resumo}`,
+    `> ${t.descricao}`,
     "",
-    "| Área | Status | Progresso |",
-    "|---|---|---|",
-    `| ${fase ? fase.nome : t.fase} | ${STATUS[t.status] || t.status} | ${t.status === "proximo" ? "—" : `\`${bar(t.progresso)}\` ${t.progresso}%`} |`,
+    "| Área | Grupo | Nível | Importância | Status |",
+    "|---|---|---|---|---|",
+    `| [${a.numero} ${a.nome}](README.md) | ${t.grupo} | ${nivelNome(t.nivel)} | ${IMPORTANCIA[t.importancia] || t.importancia} | ${ESTADOS[t.status]} |`,
     "",
-    `🔗 **No portfólio:** [${t.nome}](${topicUrl(t.id)})` + (t.demo ? " (com laboratório interativo)" : ""),
+    `🔗 **No portfólio:** [${t.nome}](${topicUrl(t.id)})`,
+    "",
+    "## O que preciso aprender",
+    "",
+    ...t.aprender.map((x) => `- [ ] ${x}`),
+    "",
+    "## Como aplicar na prática",
+    "",
+    t.aplicar,
+    "",
+    "## Pré-requisitos",
+    "",
+    ...(t.pre.length ? rel(t.pre) : ["Nenhum: pode começar por aqui."]),
     ""
   ];
+  if (libera.length) L.push("## Libera", "", ...rel(libera), "");
 
-  if (t.anotacoes && t.anotacoes.length) linhas.push("## Anotações", "", ...t.anotacoes.map((a) => `- ${a}`), "");
-  if (t.armadilhas && t.armadilhas.length) linhas.push("## Armadilhas", "", ...t.armadilhas.map((a) => `- ⚠️ ${a}`), "");
-  if (t.codigo) linhas.push("## Código", "", "```" + (t.linguagem || "js"), t.codigo, "```", "");
-  if (!t.anotacoes?.length && !t.armadilhas?.length && !t.codigo) {
-    linhas.push(t.status === "proximo"
-      ? "_Este tópico ainda está na fila. As anotações entram aqui quando os estudos começarem._"
-      : "_As anotações deste tópico ainda estão sendo escritas._", "");
-  }
+  const temNotas = t.anotacoes?.length || t.armadilhas?.length || t.codigo || t.links?.length;
+  L.push("## Minhas anotações", "");
+  if (!temNotas) L.push("_Ainda sem anotações._", "");
+  if (t.anotacoes?.length) L.push(...t.anotacoes.map((x) => `- ${x}`), "");
+  if (t.armadilhas?.length) L.push("### Armadilhas", "", ...t.armadilhas.map((x) => `- ⚠️ ${x}`), "");
+  if (t.codigo) L.push("### Código", "", "```" + (t.linguagem || "java"), t.codigo, "```", "");
+  if (t.links?.length) L.push("### Referências", "", ...t.links.map((l) => `- [${l.titulo}](${l.url})`), "");
 
-  linhas.push("---", "", `[← Índice do roadmap](../README.md)`, "");
-  return linhas.join("\n");
+  L.push("---", "", `[← Área ${a.numero}](README.md) · [Índice do roadmap](../README.md)`, "");
+  return L.join("\n");
 }
 
-function indice(R) {
-  const linhas = [
+function indiceArea(a) {
+  const tops = topicos.filter((t) => t.area === a.id);
+  const L = [
     GERADO,
     "",
-    "# Roadmap",
+    `# ${a.numero} · ${a.nome}`,
     "",
-    `Notas geradas a partir do [roadmap do portfólio](${SITE}roadmap.html). Cada tópico tem a sua página no portfólio e a sua nota aqui.`,
+    `> ${a.descricao}`,
+    "",
+    `**Objetivo:** ${a.objetivo}`,
+    "",
+    `**Nível recomendado:** ${a.nivel} · **Prioridade:** ${IMPORTANCIA[a.prioridade] || a.prioridade} · **Progresso:** \`${bar(pct(tops))}\` ${pct(tops)}%`,
+    "",
+    `🔗 [Abrir no portfólio](${areaUrl(a.id)})`,
     ""
   ];
-  for (const f of R.fases) {
-    const tops = R.topicos.filter((t) => t.fase === f.id);
-    if (!tops.length) continue;
-    linhas.push(`## ${f.nome}`, "", f.texto ? `_${f.texto}_\n` : "", "| Tópico | Status | Progresso | Portfólio |", "|---|---|---|---|");
-    for (const t of tops) {
-      linhas.push(`| [${t.nome}](${f.id}/${t.id}.md) | ${STATUS[t.status] || t.status} | ${t.status === "proximo" ? "—" : t.progresso + "%"} | [abrir](${topicUrl(t.id)}) |`);
-    }
-    linhas.push("");
+  if (a.pre?.length) L.push("**Pré-requisitos:** " + a.pre.map((x) => `[${area(x).numero} ${area(x).nome}](../${x}/README.md)`).join(" · "), "");
+  if (a.relacoes?.length) L.push("**Relação com:** " + a.relacoes.map((x) => `[${area(x).numero} ${area(x).nome}](../${x}/README.md)`).join(" · "), "");
+  if (a.conclusao?.length) L.push("## Critérios de conclusão", "", ...a.conclusao.map((x) => `- [ ] ${x}`), "");
+  for (const n of ["N1", "N2", "N3", "N4"]) {
+    const doNivel = tops.filter((t) => t.nivel === n);
+    if (!doNivel.length) continue;
+    L.push(`## ${nivelNome(n)}`, "", "| Tópico | Grupo | Importância | Status |", "|---|---|---|---|");
+    for (const t of doNivel) L.push(`| [${t.nome}](${t.id}.md) | ${t.grupo} | ${IMPORTANCIA[t.importancia] || t.importancia} | ${ESTADOS[t.status]} |`);
+    L.push("");
   }
-  return linhas.join("\n");
+  L.push("---", "", "[← Índice do roadmap](../README.md)", "");
+  return L.join("\n");
 }
 
-function secaoReadme(R) {
-  const feitos = R.topicos.filter((t) => t.status === "dominado").length;
+function indice() {
+  const L = [
+    GERADO,
+    "",
+    "# Roadmap · Backend Engineering",
+    "",
+    `Notas geradas a partir do [roadmap do portfólio](${SITE}roadmap.html). Cada tópico tem a sua página no portfólio e a sua nota aqui.`,
+    "",
+    `**Progresso geral:** \`${bar(pct(topicos))}\` ${pct(topicos)}% · ${topicos.filter(concluido).length} de ${topicos.length} tópicos dominados`,
+    "",
+    "| Área | Prioridade | Nível | Progresso | Tópicos |",
+    "|---|---|---|---|---|"
+  ];
+  for (const a of areas) {
+    const tops = topicos.filter((t) => t.area === a.id);
+    L.push(`| [${a.numero} ${a.nome}](${a.id}/README.md) | ${IMPORTANCIA[a.prioridade] || a.prioridade} | ${a.nivel} | \`${bar(pct(tops))}\` ${pct(tops)}% | ${tops.filter(concluido).length}/${tops.length} |`);
+  }
+  L.push("", "Estados: " + Object.values(ESTADOS).join(" · "), "");
+  return L.join("\n");
+}
+
+function secaoReadme() {
   return [
     "<!-- roadmap:inicio -->",
     "## Roadmap",
     "",
-    `Sincronizado com o [roadmap do portfólio](${SITE}roadmap.html): ${feitos} de ${R.topicos.length} tópicos dominados. Índice completo em [roadmap/](roadmap/README.md).`,
+    `Sincronizado com o [roadmap do portfólio](${SITE}roadmap.html): ${topicos.filter(concluido).length} de ${topicos.length} tópicos dominados (${pct(topicos)}%). Índice completo em [roadmap/](roadmap/README.md).`,
     "",
-    ...R.fases.map((f) => {
-      const tops = R.topicos.filter((t) => t.fase === f.id);
-      return tops.length ? `- **${f.nome}:** ` + tops.map((t) => `[${t.nome}](roadmap/${f.id}/${t.id}.md)`).join(" · ") : null;
-    }).filter(Boolean),
+    ...areas.map((a) => `- [${a.numero} ${a.nome}](roadmap/${a.id}/README.md) · ${pct(topicos.filter((t) => t.area === a.id))}%`),
     "<!-- roadmap:fim -->"
   ].join("\n");
 }
@@ -109,8 +182,7 @@ async function write(path, content) {
 }
 
 async function walk(dir) {
-  let out = [];
-  let entries = [];
+  let out = [], entries = [];
   try { entries = await readdir(dir, { withFileTypes: true }); } catch { return out; }
   for (const e of entries) {
     const p = join(dir, e.name);
@@ -120,39 +192,32 @@ async function walk(dir) {
   return out;
 }
 
-const R = await load("data/roadmap.js", "ROADMAP");
-const cfg = await load("data/config.js", "SITE_CONFIG");
-const PASTA = (cfg.techNotes && cfg.techNotes.pasta) || "roadmap";
-
-const ids = new Set();
-for (const t of R.topicos) {
-  if (!/^[a-z0-9-]+$/.test(t.id)) throw new Error(`id inválido no roadmap: "${t.id}" (use letras minúsculas, números e hífen)`);
-  if (ids.has(t.id)) throw new Error(`id repetido no roadmap: "${t.id}"`);
-  ids.add(t.id);
-}
-
 const esperados = new Set();
-for (const t of R.topicos) {
-  const p = join(PASTA, t.fase, t.id + ".md");
+for (const t of topicos) {
+  const p = join(PASTA, t.area, t.id + ".md");
   esperados.add(p);
-  await write(p, nota(R, t));
+  await write(p, nota(t));
+}
+for (const a of areas) {
+  const p = join(PASTA, a.id, "README.md");
+  esperados.add(p);
+  await write(p, indiceArea(a));
 }
 const idx = join(PASTA, "README.md");
 esperados.add(idx);
-await write(idx, indice(R));
+await write(idx, indice());
 
-// Remove só arquivos gerados cujo tópico saiu do portfólio.
+// Remove só arquivos gerados que não fazem mais parte do roadmap.
 for (const f of await walk(PASTA)) {
   if (esperados.has(f)) continue;
   const txt = await readFile(f, "utf8");
   if (txt.startsWith("<!-- GERADO")) { await rm(f); console.log("removido:", f); }
 }
 
-// Atualiza a seção do README principal entre os marcadores.
 let readme = await readFile("README.md", "utf8");
-const secao = secaoReadme(R);
+const secao = secaoReadme();
 const re = /<!-- roadmap:inicio -->[\s\S]*?<!-- roadmap:fim -->/;
 readme = re.test(readme) ? readme.replace(re, secao) : readme.replace(/\s*$/, "\n\n" + secao + "\n");
 await write("README.md", readme);
 
-console.log(`ok: ${R.topicos.length} tópicos em ${PASTA}/`);
+console.log(`ok: ${topicos.length} tópicos em ${areas.length} áreas, pasta ${PASTA}/`);
