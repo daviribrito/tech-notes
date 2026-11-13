@@ -1,31 +1,34 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# SQL injection, XSS, CSRF e SSRF
+# SQL Injection, XSS, CSRF e SSRF
 
 > Ataques clássicos e as defesas.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.1 Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [SQL injection, XSS, CSRF e SSRF](https://daviribrito.github.io/portfolio/topico.html?id=sec-ataques)
+🔗 **No portfólio:** [SQL Injection, XSS, CSRF e SSRF](https://daviribrito.github.io/portfolio/topico.html?id=sec-ataques)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] SQL injection
-- [ ] XSS
-- [ ] CSRF
-- [ ] SSRF
-- [ ] Validação e codificação de saída
+- SQL Injection
+- XSS
+- CSRF
+- SSRF
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Corrigir uma consulta concatenada e proteger formulários.
+Escrever código imune aos ataques mais comuns.
+
+## Critérios de conclusão
+
+- [ ] Demonstrar e corrigir cada ataque em um ambiente de teste.
 
 ## Pré-requisitos
 
-- [OWASP Top 10 e OWASP API Security](../confiabilidade/sec-owasp.md) · ⚪ Não iniciado
-- [SQL: consulta e manipulação de dados](../banco/db-sql-basico.md) · ⚪ Não iniciado
+- [OWASP Top 10 e OWASP API Security](../confiabilidade/sec-owasp.md) · 9.1 Segurança · ⚪ Não iniciado
+- [Consultas e manipulação de dados](../banco/sql-basico.md) · 6.2 SQL · ⚪ Não iniciado
 
 ## Minhas anotações
 

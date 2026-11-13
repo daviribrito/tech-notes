@@ -6,51 +6,54 @@
 
 **Objetivo:** Levar o código do commit à produção de forma automática, repetível e segura.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Importante · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Importante · **Níveis:** N1–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [05 Redes e protocolos de comunicação](../redes/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=devops)
 
-**Pré-requisitos:** [05 Redes de computadores e comunicação](../redes/README.md)
+## 10.1 Ferramentas
 
-**Relação com:** [09 Segurança, observabilidade e confiabilidade](../confiabilidade/README.md) · [11 Sistemas distribuídos e System Design](../distribuidos/README.md)
+N1–N2 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Containerizar uma aplicação e publicar com pipeline de CI/CD.
-- [ ] Subir a infraestrutura de um serviço na cloud com Terraform.
-- [ ] Fazer um deploy blue-green ou canary com rollback.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Git e GitHub](dev-git.md) | Ferramentas e ambientes | Essencial | ⚪ Não iniciado |
-| [Linux, terminal e Bash](dev-linux.md) | Ferramentas e ambientes | Essencial | ⚪ Não iniciado |
-| [Fundamentos de cloud computing](dev-cloud.md) | Cloud | Importante | ⚪ Não iniciado |
+| [Git e GitHub](dev-git.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Linux, terminal e Bash](dev-linux.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Processos, serviços e variáveis de ambiente](dev-processos.md) | N2 | Importante | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 10.2 Containers e CI/CD
 
-| Tópico | Grupo | Importância | Status |
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Docker: imagens, containers, volumes e redes](dev-docker.md) | Containers e CI/CD | Essencial | ⚪ Não iniciado |
-| [Docker Compose](dev-compose.md) | Containers e CI/CD | Essencial | ⚪ Não iniciado |
-| [CI/CD e GitHub Actions](dev-cicd.md) | Containers e CI/CD | Essencial | ⚪ Não iniciado |
-| [Serviços gerenciados: AWS, Azure e Google Cloud](dev-cloud-servicos.md) | Cloud | Importante | ⚪ Não iniciado |
-| [IAM](dev-iam.md) | Cloud | Essencial | ⚪ Não iniciado |
+| [Docker: images, containers, volumes e networks](dev-docker.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Docker Compose](dev-compose.md) | N2 | Essencial | ⚪ Não iniciado |
+| [CI/CD, GitHub Actions e Build Pipelines](dev-cicd.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Deployments, Rollback, Blue-Green e Canary](dev-deploy.md) | N3 | Importante | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 10.3 Cloud
 
-| Tópico | Grupo | Importância | Status |
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Deployments e rollback](dev-deploy.md) | Containers e CI/CD | Importante | ⚪ Não iniciado |
-| [Kubernetes e Helm](dev-kubernetes.md) | Infraestrutura avançada | Importante | ⚪ Não iniciado |
-| [Infrastructure as Code com Terraform](dev-iac.md) | Infraestrutura avançada | Importante | ⚪ Não iniciado |
+| [Cloud Computing, IaaS, PaaS e SaaS](cloud-fundamentos.md) | N1 | Importante | ⚪ Não iniciado |
+| [AWS, Azure e Google Cloud](cloud-provedores.md) | N2 | Importante | ⚪ Não iniciado |
+| [Serverless, Managed Databases e Object Storage](cloud-servicos.md) | N2 | Importante | ⚪ Não iniciado |
+| [Load Balancers e API Gateway](cloud-borda.md) | N2 | Importante | ⚪ Não iniciado |
+| [IAM](cloud-iam.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 10.4 Infraestrutura avançada
 
-| Tópico | Grupo | Importância | Status |
+N3–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Service discovery, service mesh e GitOps](dev-plataforma.md) | Infraestrutura avançada | Complementar | ⚪ Não iniciado |
+| [Kubernetes, Helm e Autoscaling](infra-kubernetes.md) | N3 | Importante | ⚪ Não iniciado |
+| [Terraform e Infrastructure as Code](infra-iac.md) | N3 | Importante | ⚪ Não iniciado |
+| [Service Discovery, Service Mesh e GitOps](infra-plataforma.md) | N4 | Complementar | ⚪ Não iniciado |
 
 ---
 

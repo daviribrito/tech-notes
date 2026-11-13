@@ -1,29 +1,32 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Álgebra linear
+# Noções de álgebra linear
 
-> Vetores e matrizes, úteis para gráficos, buscas por similaridade e machine learning.
+> Vetores e matrizes em nível introdutório.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [01 Matemática e fundamentos matemáticos](README.md) | Contínua e dados | N3 · Avançado | Complementar | ⚪ Não iniciado |
+| [01 Matemática aplicada à computação e backend](README.md) | 1.5 Matemática complementar | N2 · Intermediário | Complementar | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Álgebra linear](https://daviribrito.github.io/portfolio/topico.html?id=mat-algebra-linear)
+🔗 **No portfólio:** [Noções de álgebra linear](https://daviribrito.github.io/portfolio/topico.html?id=mat-algebra-linear)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Vetores e operações
-- [ ] Matrizes e multiplicação
-- [ ] Sistemas lineares
-- [ ] Produto escalar e similaridade
+- Vetores e matrizes
+- Operações básicas
+- Produto escalar e similaridade de cosseno
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Entender buscas vetoriais e sistemas de recomendação que aparecem em backends modernos.
+Entender buscas vetoriais e recomendações quando aparecerem no backend.
+
+## Critérios de conclusão
+
+- [ ] Calcular a similaridade de cosseno entre dois vetores.
 
 ## Pré-requisitos
 
-- [Funções e logaritmos](../matematica/mat-funcoes-log.md) · ⚪ Não iniciado
+- [Noções de álgebra](../matematica/mat-algebra.md) · 1.5 Matemática complementar · ⚪ Não iniciado
 
 ## Minhas anotações
 

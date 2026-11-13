@@ -1,37 +1,41 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Árvores binárias e árvores de busca
+# Árvores binárias e Binary Search Trees
 
 > Estruturas hierárquicas e a busca ordenada.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Estruturas de dados | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.6 Estruturas de dados | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Árvores binárias e árvores de busca](https://daviribrito.github.io/portfolio/topico.html?id=ed-arvores)
+🔗 **No portfólio:** [Árvores binárias e Binary Search Trees](https://daviribrito.github.io/portfolio/topico.html?id=ed-arvores)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Terminologia de árvores
-- [ ] Travessias pré, em e pós-ordem e por nível
-- [ ] Árvore binária de busca
-- [ ] Inserção e remoção
+- Árvores binárias
+- Travessias
+- Binary Search Tree: busca, inserção e remoção
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Representar hierarquias (categorias, menus) e entender TreeMap.
+Hierarquias e mapas ordenados como TreeMap.
+
+## Critérios de conclusão
+
+- [ ] Implementar uma BST com inserção, busca e remoção.
 
 ## Pré-requisitos
 
-- [Listas encadeadas, pilhas e filas](../computacao/ed-listas.md) · ⚪ Não iniciado
-- [Recursividade](../computacao/cc-recursividade.md) · ⚪ Não iniciado
+- [Listas encadeadas, stacks e queues](../computacao/ed-listas.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Recursividade](../computacao/cc-recursividade.md) · 2.1 Lógica de programação · ⚪ Não iniciado
 
 ## Libera
 
-- [Heaps e filas de prioridade](../computacao/ed-heaps.md) · ⚪ Não iniciado
-- [Árvores balanceadas e B-Trees](../computacao/ed-balanceadas.md) · ⚪ Não iniciado
-- [Algoritmos em árvores](../computacao/alg-arvores.md) · ⚪ Não iniciado
-- [Índices](../banco/db-indices.md) · ⚪ Não iniciado
+- [Algoritmos de árvores](../computacao/adv-arvores.md) · 2.5 Algoritmos e estruturas avançadas · ⚪ Não iniciado
+- [Heaps e Priority Queues](../computacao/ed-heaps.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Árvores balanceadas, B-Trees e B+ Trees](../computacao/ed-balanceadas.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Tries, Bloom Filters e estruturas especializadas](../computacao/ed-especializadas.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Índices: tipos, cardinalidade e seletividade](../banco/idx-indices.md) · 6.3 Índices e performance · ⚪ Não iniciado
 
 ## Minhas anotações
 

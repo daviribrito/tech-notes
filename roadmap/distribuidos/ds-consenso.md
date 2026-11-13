@@ -1,33 +1,37 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Consenso e eleição de líder: Raft e Paxos
+# Leader Election, Raft e Paxos
 
 > Como nós concordam sobre um valor.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | Algoritmos distribuídos | N4 · Especialização | Complementar | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.4 Algoritmos distribuídos | N4 · Especialização | Complementar | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Consenso e eleição de líder: Raft e Paxos](https://daviribrito.github.io/portfolio/topico.html?id=ds-consenso)
+🔗 **No portfólio:** [Leader Election, Raft e Paxos](https://daviribrito.github.io/portfolio/topico.html?id=ds-consenso)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Leader election
-- [ ] Raft
-- [ ] Paxos
-- [ ] Onde aparecem: etcd, ZooKeeper, Kafka
+- Leader Election
+- Raft
+- Paxos
+- Onde aparecem: etcd, ZooKeeper e Kafka
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Explicar como um cluster escolhe o líder após uma falha.
+Entender a coordenação de clusters que você usa.
+
+## Critérios de conclusão
+
+- [ ] Explicar como um cluster Raft elege um líder após uma falha.
 
 ## Pré-requisitos
 
-- [Replicação e quórum](../distribuidos/ds-replicacao.md) · ⚪ Não iniciado
+- [Replicação e Quorum](../distribuidos/ds-replicacao.md) · 11.2 Teorias · ⚪ Não iniciado
 
 ## Libera
 
-- [Locks distribuídos, gossip e two-phase commit](../distribuidos/ds-coordenacao.md) · ⚪ Não iniciado
+- [Distributed Locks e Two-Phase Commit](../distribuidos/ds-locks-2pc.md) · 11.4 Algoritmos distribuídos · ⚪ Não iniciado
 
 ## Minhas anotações
 

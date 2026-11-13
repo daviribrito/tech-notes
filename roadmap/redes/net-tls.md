@@ -1,30 +1,34 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# HTTPS, TLS e certificados
+# TLS e certificados
 
 > Comunicação segura e autenticação de servidores.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [05 Redes de computadores e comunicação](README.md) | Aplicação | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [05 Redes e protocolos de comunicação](README.md) | 5.2 Protocolos de aplicação | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [HTTPS, TLS e certificados](https://daviribrito.github.io/portfolio/topico.html?id=net-tls)
+🔗 **No portfólio:** [TLS e certificados](https://daviribrito.github.io/portfolio/topico.html?id=net-tls)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Handshake TLS
-- [ ] Certificados e cadeia de confiança
-- [ ] SSL obsoleto e versões do TLS
-- [ ] mTLS
+- Handshake TLS
+- Certificados e cadeia de confiança
+- Versões do TLS
+- mTLS
 
-## Como aplicar na prática
+## Aplicação no backend
 
 Configurar HTTPS e diagnosticar erros de certificado.
 
+## Critérios de conclusão
+
+- [ ] Diagnosticar um erro de cadeia de certificados com openssl.
+
 ## Pré-requisitos
 
-- [HTTP e as suas versões](../redes/net-http.md) · ⚪ Não iniciado
-- [Criptografia e hashing](../confiabilidade/sec-cripto.md) · ⚪ Não iniciado
+- [HTTP, headers e versões do protocolo](../redes/net-http.md) · 5.2 Protocolos de aplicação · ⚪ Não iniciado
+- [Criptografia e hashing](../confiabilidade/sec-cripto.md) · 9.1 Segurança · ⚪ Não iniciado
 
 ## Minhas anotações
 

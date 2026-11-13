@@ -1,34 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# CI/CD e GitHub Actions
+# CI/CD, GitHub Actions e Build Pipelines
 
 > Verificar e entregar código automaticamente.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [10 DevOps, infraestrutura e Cloud](README.md) | Containers e CI/CD | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [10 DevOps, infraestrutura e Cloud](README.md) | 10.2 Containers e CI/CD | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [CI/CD e GitHub Actions](https://daviribrito.github.io/portfolio/topico.html?id=dev-cicd)
+🔗 **No portfólio:** [CI/CD, GitHub Actions e Build Pipelines](https://daviribrito.github.io/portfolio/topico.html?id=dev-cicd)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] CI e CD
-- [ ] GitHub Actions
-- [ ] Build pipelines
-- [ ] Artefatos e cache
+- CI/CD
+- GitHub Actions
+- Build Pipelines
+- Artefatos e cache
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Criar um pipeline com lint, testes, build e deploy.
+Cada push verificado por lint, testes e build.
+
+## Critérios de conclusão
+
+- [ ] Criar um pipeline com testes, build da imagem e publicação.
 
 ## Pré-requisitos
 
-- [Git e GitHub](../devops/dev-git.md) · ⚪ Não iniciado
-- [Testes unitários com JUnit](../engenharia/tst-unitarios.md) · ⚪ Não iniciado
+- [Git e GitHub](../devops/dev-git.md) · 10.1 Ferramentas · ⚪ Não iniciado
+- [Testes unitários com JUnit](../engenharia/tst-unitarios.md) · 8.4 Testes · ⚪ Não iniciado
 
 ## Libera
 
-- [Deployments e rollback](../devops/dev-deploy.md) · ⚪ Não iniciado
+- [Deployments, Rollback, Blue-Green e Canary](../devops/dev-deploy.md) · 10.2 Containers e CI/CD · ⚪ Não iniciado
 
 ## Minhas anotações
 

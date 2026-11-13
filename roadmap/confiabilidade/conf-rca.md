@@ -1,29 +1,32 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Incidentes e root cause analysis
+# Root Cause Analysis
 
-> Responder a incidentes e aprender com eles.
+> Investigar incidentes e evitar que se repitam.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Confiabilidade | N3 · Avançado | Importante | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.3 Confiabilidade | N3 · Avançado | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Incidentes e root cause analysis](https://daviribrito.github.io/portfolio/topico.html?id=conf-rca)
+🔗 **No portfólio:** [Root Cause Analysis](https://daviribrito.github.io/portfolio/topico.html?id=conf-rca)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Gestão de incidentes
-- [ ] Root cause analysis
-- [ ] Postmortem sem culpados
-- [ ] Ações corretivas
+- Root Cause Analysis
+- Postmortem sem culpados
+- Ações corretivas
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Conduzir um postmortem de um problema real ou simulado.
+Aprender com incidentes em vez de repeti-los.
+
+## Critérios de conclusão
+
+- [ ] Conduzir o postmortem de um incidente real ou simulado.
 
 ## Pré-requisitos
 
-- [Métricas, monitoramento e alertas](../confiabilidade/obs-metricas.md) · ⚪ Não iniciado
+- [Metrics, Monitoring, Prometheus e Grafana](../confiabilidade/obs-metricas.md) · 9.2 Observabilidade · ⚪ Não iniciado
 
 ## Minhas anotações
 

@@ -1,34 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Logging estruturado, correlation ID e trace ID
+# Logging, Correlation ID e Trace ID
 
 > Logs que ajudam a investigar produção.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Observabilidade | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.2 Observabilidade | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Logging estruturado, correlation ID e trace ID](https://daviribrito.github.io/portfolio/topico.html?id=obs-logs)
+🔗 **No portfólio:** [Logging, Correlation ID e Trace ID](https://daviribrito.github.io/portfolio/topico.html?id=obs-logs)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Logging estruturado em JSON
-- [ ] Níveis e o que não logar
-- [ ] Correlation ID
-- [ ] Trace ID
+- Logging estruturado
+- Correlation ID
+- Trace ID
+- O que não logar
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Seguir uma requisição por todos os logs pelo correlation ID.
+Seguir uma requisição por todos os logs.
+
+## Critérios de conclusão
+
+- [ ] Rastrear uma requisição em todos os logs pelo correlation ID.
 
 ## Pré-requisitos
 
-- [Debugging e logging](../linguagem/java-debug-logging.md) · ⚪ Não iniciado
+- [Debugging e logging](../linguagem/tool-debug-logging.md) · 3.5 Ferramentas · ⚪ Não iniciado
 
 ## Libera
 
-- [Métricas, monitoramento e alertas](../confiabilidade/obs-metricas.md) · ⚪ Não iniciado
-- [Distributed tracing e OpenTelemetry](../confiabilidade/obs-tracing.md) · ⚪ Não iniciado
+- [Metrics, Monitoring, Prometheus e Grafana](../confiabilidade/obs-metricas.md) · 9.2 Observabilidade · ⚪ Não iniciado
+- [Distributed Tracing e OpenTelemetry](../confiabilidade/obs-tracing.md) · 9.2 Observabilidade · ⚪ Não iniciado
 
 ## Minhas anotações
 

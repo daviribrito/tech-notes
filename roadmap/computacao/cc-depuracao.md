@@ -4,31 +4,35 @@
 
 > Método para entender um problema, isolar a causa e confirmar a correção.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Lógica de programação | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.1 Lógica de programação | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Depuração e resolução de problemas](https://daviribrito.github.io/portfolio/topico.html?id=cc-depuracao)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Decompor problemas
-- [ ] Testes de mesa e casos de borda
-- [ ] Ler mensagens de erro e stack traces
-- [ ] Uso de debugger e breakpoints
-- [ ] Hipótese, experimento e confirmação
+- Decompor problemas
+- Casos de borda
+- Ler mensagens de erro e stack traces
+- Debugger e breakpoints
+- Hipótese, experimento e confirmação
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Reproduzir um bug com o menor caso possível antes de alterar o código.
+Investigar bugs reais com método em vez de tentativa e erro.
+
+## Critérios de conclusão
+
+- [ ] Reproduzir um bug com o menor caso possível antes de corrigir.
 
 ## Pré-requisitos
 
-- [Lógica de programação](../computacao/cc-logica.md) · ⚪ Não iniciado
+- [Algoritmos, variáveis e controle de fluxo](../computacao/cc-algoritmos.md) · 2.1 Lógica de programação · ⚪ Não iniciado
 
 ## Libera
 
-- [Debugging e logging](../linguagem/java-debug-logging.md) · ⚪ Não iniciado
+- [Debugging e logging](../linguagem/tool-debug-logging.md) · 3.5 Ferramentas · ⚪ Não iniciado
 
 ## Minhas anotações
 

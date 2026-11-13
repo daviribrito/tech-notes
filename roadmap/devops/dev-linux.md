@@ -2,26 +2,27 @@
 
 # Linux, terminal e Bash
 
-> O ambiente onde os servidores rodam.
+> O ambiente onde os servidores rodam (SSH em 5.2).
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [10 DevOps, infraestrutura e Cloud](README.md) | Ferramentas e ambientes | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [10 DevOps, infraestrutura e Cloud](README.md) | 10.1 Ferramentas | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Linux, terminal e Bash](https://daviribrito.github.io/portfolio/topico.html?id=dev-linux)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Navegação e arquivos
-- [ ] Permissões
-- [ ] Pipes e redirecionamento
-- [ ] Scripts Bash
-- [ ] Processos e serviços (systemd)
-- [ ] Variáveis de ambiente
+- Linux
+- Terminal: navegação, arquivos e pipes
+- Scripts Bash
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Investigar um servidor pelo terminal e automatizar tarefas com scripts.
+Investigar servidores e automatizar tarefas.
+
+## Critérios de conclusão
+
+- [ ] Investigar um problema em um servidor só pelo terminal.
 
 ## Pré-requisitos
 
@@ -29,7 +30,8 @@ Nenhum: pode começar por aqui.
 
 ## Libera
 
-- [Docker: imagens, containers, volumes e redes](../devops/dev-docker.md) · ⚪ Não iniciado
+- [Processos, serviços e variáveis de ambiente](../devops/dev-processos.md) · 10.1 Ferramentas · ⚪ Não iniciado
+- [Docker: images, containers, volumes e networks](../devops/dev-docker.md) · 10.2 Containers e CI/CD · ⚪ Não iniciado
 
 ## Minhas anotações
 

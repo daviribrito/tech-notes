@@ -1,34 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Algoritmos de busca
+# Busca linear e binária
 
 > Encontrar elementos com o menor número de comparações.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Algoritmos | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.3 Algoritmos de busca e ordenação | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Algoritmos de busca](https://daviribrito.github.io/portfolio/topico.html?id=alg-busca)
+🔗 **No portfólio:** [Busca linear e binária](https://daviribrito.github.io/portfolio/topico.html?id=alg-busca)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Busca linear
-- [ ] Busca binária
-- [ ] Variações: primeira e última ocorrência
-- [ ] Busca binária no espaço de respostas
+- Busca linear
+- Busca binária
+- Primeira e última ocorrência
+- Busca binária no espaço de respostas
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Buscar em dados ordenados e encontrar limites (menor valor que satisfaz uma condição).
+Buscar em dados ordenados e encontrar limites, como o menor valor que satisfaz uma condição.
+
+## Critérios de conclusão
+
+- [ ] Implementar busca binária sem erros de borda e as suas variações.
 
 ## Pré-requisitos
 
-- [Arrays, matrizes e strings](../computacao/ed-arrays-strings.md) · ⚪ Não iniciado
-- [Notação assintótica](../computacao/cx-assintotica.md) · ⚪ Não iniciado
+- [Arrays, matrizes e strings](../computacao/ed-arrays.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Notação assintótica](../computacao/cx-notacao.md) · 2.2 Complexidade de algoritmos · ⚪ Não iniciado
 
 ## Libera
 
-- [Algoritmos de ordenação](../computacao/alg-ordenacao.md) · ⚪ Não iniciado
+- [Two Pointers](../computacao/tec-two-pointers.md) · 2.4 Técnicas de resolução de problemas · ⚪ Não iniciado
 
 ## Minhas anotações
 

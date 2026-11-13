@@ -1,37 +1,43 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# HTTP e as suas versões
+# HTTP, headers e versões do protocolo
 
-> O protocolo da web e a evolução das versões.
+> O protocolo da web e a sua evolução.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [05 Redes de computadores e comunicação](README.md) | Aplicação | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [05 Redes e protocolos de comunicação](README.md) | 5.2 Protocolos de aplicação | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [HTTP e as suas versões](https://daviribrito.github.io/portfolio/topico.html?id=net-http)
+🔗 **No portfólio:** [HTTP, headers e versões do protocolo](https://daviribrito.github.io/portfolio/topico.html?id=net-http)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] HTTP/1.1 e keep-alive
-- [ ] HTTP/2 e multiplexação
-- [ ] HTTP/3 e QUIC
-- [ ] Cache HTTP: Cache-Control e ETag
+- HTTP e HTTPS
+- Headers e protocolos
+- HTTP/1.1 e keep-alive
+- HTTP/2 e multiplexação
+- HTTP/3 e QUIC
+- Cache HTTP
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Configurar cache e conexões persistentes entre serviços.
+Configurar conexões persistentes e cache entre clientes e serviços.
+
+## Critérios de conclusão
+
+- [ ] Explicar o ganho do HTTP/2 sobre o HTTP/1.1 e o do HTTP/3 sobre o HTTP/2.
 
 ## Pré-requisitos
 
-- [TCP e UDP](../redes/net-tcp-udp.md) · ⚪ Não iniciado
+- [TCP, UDP e TCP Handshake](../redes/net-tcp-udp.md) · 5.1 Fundamentos e transporte · ⚪ Não iniciado
 
 ## Libera
 
-- [HTTPS, TLS e certificados](../redes/net-tls.md) · ⚪ Não iniciado
-- [WebSockets e comunicação em tempo real](../redes/net-tempo-real.md) · ⚪ Não iniciado
-- [Proxies, reverse proxies e load balancing](../redes/net-proxies.md) · ⚪ Não iniciado
-- [CDN](../redes/net-cdn.md) · ⚪ Não iniciado
-- [Comunicação entre serviços](../redes/net-servicos.md) · ⚪ Não iniciado
+- [TLS e certificados](../redes/net-tls.md) · 5.2 Protocolos de aplicação · ⚪ Não iniciado
+- [WebSockets e comunicação em tempo real](../redes/net-websockets.md) · 5.2 Protocolos de aplicação · ⚪ Não iniciado
+- [Proxies, reverse proxies e Load Balancing](../redes/net-proxies.md) · 5.3 Infraestrutura e desempenho · ⚪ Não iniciado
+- [CDN](../redes/net-cdn.md) · 5.3 Infraestrutura e desempenho · ⚪ Não iniciado
+- [Comunicação entre serviços](../redes/net-servicos.md) · 5.3 Infraestrutura e desempenho · ⚪ Não iniciado
 
 ## Minhas anotações
 

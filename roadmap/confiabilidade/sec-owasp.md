@@ -4,31 +4,34 @@
 
 > As vulnerabilidades mais comuns em aplicações e APIs.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.1 Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [OWASP Top 10 e OWASP API Security](https://daviribrito.github.io/portfolio/topico.html?id=sec-owasp)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] OWASP Top 10
-- [ ] OWASP API Security Top 10
-- [ ] Como cada risco aparece em código
+- OWASP Top 10
+- OWASP API Security Top 10
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Revisar a sua API contra a lista do OWASP.
+Revisar APIs contra as falhas mais exploradas.
+
+## Critérios de conclusão
+
+- [ ] Revisar uma API contra o OWASP API Security Top 10.
 
 ## Pré-requisitos
 
-- [Fundamentos de segurança da informação](../confiabilidade/sec-fundamentos.md) · ⚪ Não iniciado
-- [Design de APIs REST](../backend/be-rest.md) · ⚪ Não iniciado
+- [Fundamentos de segurança](../confiabilidade/sec-fundamentos.md) · 9.1 Segurança · ⚪ Não iniciado
+- [REST, RESTful APIs e API Design](../backend/api-rest.md) · 7.2 HTTP e APIs · ⚪ Não iniciado
 
 ## Libera
 
-- [SQL injection, XSS, CSRF e SSRF](../confiabilidade/sec-ataques.md) · ⚪ Não iniciado
-- [Threat modeling e desenvolvimento seguro](../confiabilidade/sec-desenvolvimento-seguro.md) · ⚪ Não iniciado
+- [SQL Injection, XSS, CSRF e SSRF](../confiabilidade/sec-ataques.md) · 9.1 Segurança · ⚪ Não iniciado
+- [Threat Modeling](../confiabilidade/sec-threat.md) · 9.1 Segurança · ⚪ Não iniciado
 
 ## Minhas anotações
 

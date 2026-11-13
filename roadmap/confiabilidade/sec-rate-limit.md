@@ -1,30 +1,34 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Rate limiting e proteção contra abuso
+# Rate Limiting
 
 > Limitar o volume de requisições por cliente.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.1 Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Rate limiting e proteção contra abuso](https://daviribrito.github.io/portfolio/topico.html?id=sec-rate-limit)
+🔗 **No portfólio:** [Rate Limiting](https://daviribrito.github.io/portfolio/topico.html?id=sec-rate-limit)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Token bucket e leaky bucket
-- [ ] Janela fixa e janela deslizante
-- [ ] 429 e Retry-After
-- [ ] Rate limiting distribuído
+- Token bucket
+- Janela fixa e janela deslizante
+- 429 e Retry-After
+- Rate limiting distribuído
 
-## Como aplicar na prática
+## Aplicação no backend
 
 Proteger login e endpoints caros contra abuso.
 
+## Critérios de conclusão
+
+- [ ] Implementar rate limiting distribuído com Redis.
+
 ## Pré-requisitos
 
-- [HTTP para APIs: métodos, status, headers e parâmetros](../backend/be-http.md) · ⚪ Não iniciado
-- [Sliding window](../computacao/alg-sliding-window.md) · ⚪ Não iniciado
+- [Métodos HTTP, Status Codes, Headers e parâmetros](../backend/api-http.md) · 7.2 HTTP e APIs · ⚪ Não iniciado
+- [Sliding Window](../computacao/tec-sliding-window.md) · 2.4 Técnicas de resolução de problemas · ⚪ Não iniciado
 
 ## Minhas anotações
 

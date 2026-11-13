@@ -1,35 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Listas encadeadas, pilhas e filas
+# Listas encadeadas, stacks e queues
 
 > Estruturas lineares e as suas disciplinas de acesso.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Estruturas de dados | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.6 Estruturas de dados | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Listas encadeadas, pilhas e filas](https://daviribrito.github.io/portfolio/topico.html?id=ed-listas)
+🔗 **No portfólio:** [Listas encadeadas, stacks e queues](https://daviribrito.github.io/portfolio/topico.html?id=ed-listas)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Listas simples, duplas e circulares
-- [ ] Pilhas (LIFO)
-- [ ] Filas (FIFO) e deques
-- [ ] Implementação com array e com nós
+- Listas encadeadas simples e duplas
+- Stacks (LIFO)
+- Queues (FIFO) e deques
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Implementar desfazer/refazer com pilhas e processamento em ordem com filas.
+Processamento em ordem, desfazer e refazer e filas de trabalho.
+
+## Critérios de conclusão
+
+- [ ] Implementar lista, pilha e fila do zero.
 
 ## Pré-requisitos
 
-- [Arrays, matrizes e strings](../computacao/ed-arrays-strings.md) · ⚪ Não iniciado
+- [Arrays, matrizes e strings](../computacao/ed-arrays.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
 
 ## Libera
 
-- [Árvores binárias e árvores de busca](../computacao/ed-arvores.md) · ⚪ Não iniciado
-- [Grafos](../computacao/ed-grafos.md) · ⚪ Não iniciado
-- [Algoritmos em grafos](../computacao/alg-grafos.md) · ⚪ Não iniciado
+- [BFS, DFS e ordenação topológica](../computacao/adv-grafos.md) · 2.5 Algoritmos e estruturas avançadas · ⚪ Não iniciado
+- [Árvores binárias e Binary Search Trees](../computacao/ed-arvores.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Grafos](../computacao/ed-grafos.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
 
 ## Minhas anotações
 

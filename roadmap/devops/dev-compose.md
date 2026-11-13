@@ -4,26 +4,29 @@
 
 > Subir vários serviços juntos.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [10 DevOps, infraestrutura e Cloud](README.md) | Containers e CI/CD | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [10 DevOps, infraestrutura e Cloud](README.md) | 10.2 Containers e CI/CD | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Docker Compose](https://daviribrito.github.io/portfolio/topico.html?id=dev-compose)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Arquivo compose
-- [ ] Dependências entre serviços
-- [ ] Variáveis e perfis
-- [ ] Ambiente local completo
+- Arquivo compose
+- Dependências entre serviços
+- Ambiente local completo
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Subir API, banco e Redis com um comando.
+Subir API, banco e cache com um comando.
+
+## Critérios de conclusão
+
+- [ ] Subir o ambiente completo de um projeto com Docker Compose.
 
 ## Pré-requisitos
 
-- [Docker: imagens, containers, volumes e redes](../devops/dev-docker.md) · ⚪ Não iniciado
+- [Docker: images, containers, volumes e networks](../devops/dev-docker.md) · 10.2 Containers e CI/CD · ⚪ Não iniciado
 
 ## Minhas anotações
 

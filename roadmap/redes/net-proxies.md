@@ -1,34 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Proxies, reverse proxies e load balancing
+# Proxies, reverse proxies e Load Balancing
 
 > Intermediários que distribuem e protegem o tráfego.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [05 Redes de computadores e comunicação](README.md) | Infraestrutura de rede | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [05 Redes e protocolos de comunicação](README.md) | 5.3 Infraestrutura e desempenho | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Proxies, reverse proxies e load balancing](https://daviribrito.github.io/portfolio/topico.html?id=net-proxies)
+🔗 **No portfólio:** [Proxies, reverse proxies e Load Balancing](https://daviribrito.github.io/portfolio/topico.html?id=net-proxies)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Forward e reverse proxy
-- [ ] Nginx
-- [ ] Balanceamento L4 e L7
-- [ ] Algoritmos de balanceamento
-- [ ] Sticky sessions
+- Proxies e reverse proxies
+- Load balancing L4 e L7
+- Algoritmos de balanceamento
+- Sticky sessions
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Colocar um serviço atrás de um reverse proxy com balanceamento.
+Colocar serviços atrás de um reverse proxy com balanceamento.
+
+## Critérios de conclusão
+
+- [ ] Configurar um Nginx como reverse proxy balanceando duas instâncias.
 
 ## Pré-requisitos
 
-- [HTTP e as suas versões](../redes/net-http.md) · ⚪ Não iniciado
+- [HTTP, headers e versões do protocolo](../redes/net-http.md) · 5.2 Protocolos de aplicação · ⚪ Não iniciado
 
 ## Libera
 
-- [Escalabilidade e arquitetura stateless](../distribuidos/ds-escalabilidade.md) · ⚪ Não iniciado
+- [Load Balancers e API Gateway](../devops/cloud-borda.md) · 10.3 Cloud · ⚪ Não iniciado
+- [Vertical e Horizontal Scaling e Stateless Architecture](../distribuidos/ds-scaling.md) · 11.3 Escalabilidade · ⚪ Não iniciado
 
 ## Minhas anotações
 

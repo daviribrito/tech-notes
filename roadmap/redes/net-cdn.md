@@ -4,26 +4,29 @@
 
 > Entregar conteúdo perto do usuário.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [05 Redes de computadores e comunicação](README.md) | Infraestrutura de rede | N2 · Intermediário | Importante | ⚪ Não iniciado |
+| [05 Redes e protocolos de comunicação](README.md) | 5.3 Infraestrutura e desempenho | N2 · Intermediário | Importante | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [CDN](https://daviribrito.github.io/portfolio/topico.html?id=net-cdn)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Como uma CDN funciona
-- [ ] Edge e origem
-- [ ] Invalidação de cache
-- [ ] Cache de conteúdo dinâmico
+- Funcionamento de uma CDN
+- Edge e origem
+- Invalidação de cache
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Servir arquivos estáticos e respostas cacheáveis pela CDN.
+Servir estáticos e respostas cacheáveis com baixa latência.
+
+## Critérios de conclusão
+
+- [ ] Configurar headers de cache para servir uma resposta pela CDN.
 
 ## Pré-requisitos
 
-- [HTTP e as suas versões](../redes/net-http.md) · ⚪ Não iniciado
+- [HTTP, headers e versões do protocolo](../redes/net-http.md) · 5.2 Protocolos de aplicação · ⚪ Não iniciado
 
 ## Minhas anotações
 

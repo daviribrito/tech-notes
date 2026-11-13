@@ -2,64 +2,60 @@
 
 # 08 · Engenharia de software e arquitetura
 
-> Princípios, design patterns, estilos de arquitetura e testes.
+> Princípios, padrões de projeto, estilos de arquitetura e testes.
 
 **Objetivo:** Estruturar código e sistemas para mudar com segurança, com decisões registradas e testes confiáveis.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Essencial · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Essencial · **Níveis:** N1–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [03 Linguagem de programação e Java](../linguagem/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=engenharia)
 
-**Pré-requisitos:** [03 Linguagens de programação e runtime](../linguagem/README.md)
+## 8.1 Princípios de engenharia
 
-**Relação com:** [07 Engenharia Backend e desenvolvimento de APIs](../backend/README.md) · [11 Sistemas distribuídos e System Design](../distribuidos/README.md)
+N1–N2 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Aplicar SOLID e padrões sem exagero, justificando cada escolha.
-- [ ] Organizar um projeto em arquitetura hexagonal ou em monólito modular.
-- [ ] Manter uma suíte com testes unitários, de integração e de contrato.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [DRY, KISS, YAGNI e clean code](es-principios.md) | Princípios de engenharia | Essencial | ⚪ Não iniciado |
-| [Arquitetura em camadas e MVC](es-arq-camadas.md) | Arquitetura | Essencial | ⚪ Não iniciado |
-| [Testes unitários com JUnit](tst-unitarios.md) | Testes | Essencial | ⚪ Não iniciado |
+| [Clean Code, DRY, KISS e YAGNI](es-clean-code.md) | N1 | Essencial | ⚪ Não iniciado |
+| [SOLID](es-solid.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Coesão e acoplamento](es-acoplamento.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Dependency Injection e Inversion of Control](es-di.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Refactoring](es-refactoring.md) | N2 | Importante | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 8.2 Design patterns
 
-| Tópico | Grupo | Importância | Status |
+N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [SOLID](es-solid.md) | Princípios de engenharia | Essencial | ⚪ Não iniciado |
-| [Coesão, acoplamento e separação de responsabilidades](es-acoplamento.md) | Princípios de engenharia | Essencial | ⚪ Não iniciado |
-| [Injeção de dependência e inversão de controle](es-di.md) | Princípios de engenharia | Essencial | ⚪ Não iniciado |
-| [Refatoração e dívida técnica](es-refactoring.md) | Princípios de engenharia | Importante | ⚪ Não iniciado |
-| [Padrões criacionais](es-patterns-criacionais.md) | Design patterns | Importante | ⚪ Não iniciado |
-| [Padrões estruturais](es-patterns-estruturais.md) | Design patterns | Importante | ⚪ Não iniciado |
-| [Padrões comportamentais](es-patterns-comportamentais.md) | Design patterns | Importante | ⚪ Não iniciado |
-| [Padrões de backend](es-patterns-backend.md) | Design patterns | Essencial | ⚪ Não iniciado |
-| [Mocks e stubs com Mockito](tst-mocks.md) | Testes | Essencial | ⚪ Não iniciado |
-| [Testes de integração e Testcontainers](tst-integracao.md) | Testes | Essencial | ⚪ Não iniciado |
+| [Design Patterns: criacionais, estruturais e comportamentais](dp-gof.md) | N2 | Importante | ⚪ Não iniciado |
+| [Padrões de aplicação backend](dp-backend.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 8.3 Arquitetura
 
-| Tópico | Grupo | Importância | Status |
+N1–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Monólito modular](es-monolito-modular.md) | Arquitetura | Importante | ⚪ Não iniciado |
-| [Hexagonal, Clean e Onion](es-hexagonal-clean.md) | Arquitetura | Importante | ⚪ Não iniciado |
-| [Domain-Driven Design](es-ddd.md) | Arquitetura | Importante | ⚪ Não iniciado |
-| [Decisões arquiteturais e ADRs](es-adr.md) | Arquitetura | Importante | ⚪ Não iniciado |
-| [Testes ponta a ponta e de contrato](tst-e2e-contrato.md) | Testes | Importante | ⚪ Não iniciado |
-| [Testes de performance, carga e estresse](tst-performance.md) | Testes | Importante | ⚪ Não iniciado |
+| [Layered Architecture e MVC](arq-camadas.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Modular Monolith](arq-monolito-modular.md) | N3 | Importante | ⚪ Não iniciado |
+| [Hexagonal, Clean e Onion Architecture](arq-hexagonal.md) | N3 | Importante | ⚪ Não iniciado |
+| [Domain-Driven Design](arq-ddd.md) | N3 | Importante | ⚪ Não iniciado |
+| [Microservices](arq-microservicos.md) | N4 | Importante | ⚪ Não iniciado |
+| [ADRs](arq-adr.md) | N3 | Importante | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 8.4 Testes
 
-| Tópico | Grupo | Importância | Status |
+N1–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Microsserviços e arquitetura distribuída](es-microservicos.md) | Arquitetura | Importante | ⚪ Não iniciado |
-| [Testes de concorrência](tst-concorrencia.md) | Testes | Importante | ⚪ Não iniciado |
+| [Testes unitários com JUnit](tst-unitarios.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Mockito, mocks e stubs](tst-mockito.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Testes de integração com Testcontainers](tst-integracao.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Testes E2E e Contract Testing](tst-e2e-contrato.md) | N3 | Importante | ⚪ Não iniciado |
 
 ---
 

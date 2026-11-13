@@ -1,34 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Cache distribuído
+# Distributed Caching
 
-> Estratégias de cache em sistemas com várias instâncias.
+> Cache compartilhado entre várias instâncias.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | Escalabilidade | N3 · Avançado | Essencial | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.3 Escalabilidade | N3 · Avançado | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Cache distribuído](https://daviribrito.github.io/portfolio/topico.html?id=ds-cache)
+🔗 **No portfólio:** [Distributed Caching](https://daviribrito.github.io/portfolio/topico.html?id=ds-cache)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Cache-aside, write-through e write-behind
-- [ ] Invalidação
-- [ ] Cache stampede
-- [ ] Consistência entre cache e banco
+- Cache-aside, write-through e write-behind
+- Invalidação
+- Cache stampede
+- Consistência entre cache e banco
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Adicionar cache sem servir dados errados.
+Reduzir carga no banco sem servir dados errados.
+
+## Critérios de conclusão
+
+- [ ] Implementar cache distribuído com estratégia de invalidação e proteção contra stampede.
 
 ## Pré-requisitos
 
-- [Redis](../banco/db-redis.md) · ⚪ Não iniciado
-- [Escalabilidade e arquitetura stateless](../distribuidos/ds-escalabilidade.md) · ⚪ Não iniciado
+- [Redis](../banco/nosql-redis.md) · 6.5 Bancos NoSQL · ⚪ Não iniciado
+- [Vertical e Horizontal Scaling e Stateless Architecture](../distribuidos/ds-scaling.md) · 11.3 Escalabilidade · ⚪ Não iniciado
 
 ## Libera
 
-- [Arquitetura e trade-offs](../distribuidos/sd-arquitetura.md) · ⚪ Não iniciado
+- [Escolha de tecnologias, arquitetura e trade-offs](../distribuidos/sd-arquitetura.md) · 11.5 System Design · ⚪ Não iniciado
 
 ## Minhas anotações
 

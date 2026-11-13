@@ -1,29 +1,33 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Modelos de consistência
+# Strong Consistency, Eventual Consistency e Linearizability
 
 > O que o sistema promete sobre os dados lidos.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | Teorias | N4 · Especialização | Importante | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.2 Teorias | N4 · Especialização | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Modelos de consistência](https://daviribrito.github.io/portfolio/topico.html?id=ds-consistencia)
+🔗 **No portfólio:** [Strong Consistency, Eventual Consistency e Linearizability](https://daviribrito.github.io/portfolio/topico.html?id=ds-consistencia)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Strong consistency
-- [ ] Linearizability
-- [ ] Eventual consistency
-- [ ] Read-your-writes e consistência causal
+- Strong Consistency
+- Linearizability
+- Eventual Consistency
+- Read-your-writes
 
-## Como aplicar na prática
+## Aplicação no backend
 
 Projetar telas e regras que toleram dados ainda não propagados.
 
+## Critérios de conclusão
+
+- [ ] Explicar a garantia de consistência de um fluxo real e as suas consequências para o usuário.
+
 ## Pré-requisitos
 
-- [CAP, PACELC, ACID e BASE](../distribuidos/ds-cap.md) · ⚪ Não iniciado
+- [CAP Theorem, PACELC, ACID e BASE](../distribuidos/ds-cap.md) · 11.2 Teorias · ⚪ Não iniciado
 
 ## Minhas anotações
 

@@ -1,30 +1,33 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Capacity planning e análise de gargalos
+# Capacity Planning e Bottleneck Analysis
 
-> Prever a capacidade necessária e achar o limite.
+> Prever a capacidade necessária e encontrar o limite.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | Escalabilidade | N4 · Especialização | Importante | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.3 Escalabilidade | N4 · Especialização | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Capacity planning e análise de gargalos](https://daviribrito.github.io/portfolio/topico.html?id=ds-capacidade)
+🔗 **No portfólio:** [Capacity Planning e Bottleneck Analysis](https://daviribrito.github.io/portfolio/topico.html?id=ds-capacidade)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Capacity planning
-- [ ] Bottleneck analysis
-- [ ] Lei de Little
-- [ ] Margem de segurança
+- Capacity Planning
+- Bottleneck Analysis
+- Margem de segurança
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Estimar quantas instâncias aguentam o pico esperado.
+Preparar o sistema para picos previstos.
+
+## Critérios de conclusão
+
+- [ ] Planejar a capacidade de um serviço para um pico esperado.
 
 ## Pré-requisitos
 
-- [Escalabilidade e arquitetura stateless](../distribuidos/ds-escalabilidade.md) · ⚪ Não iniciado
-- [Testes de performance, carga e estresse](../engenharia/tst-performance.md) · ⚪ Não iniciado
+- [Vertical e Horizontal Scaling e Stateless Architecture](../distribuidos/ds-scaling.md) · 11.3 Escalabilidade · ⚪ Não iniciado
+- [Métricas, latência e capacidade](../matematica/mat-metricas.md) · 1.4 Probabilidade e estatística aplicada · ⚪ Não iniciado
 
 ## Minhas anotações
 

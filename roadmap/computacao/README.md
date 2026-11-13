@@ -1,75 +1,102 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# 02 · Ciência da Computação e fundamentos computacionais
+# 02 · Ciência da Computação e algoritmos
 
-> Lógica, representação de dados, estruturas de dados, complexidade e algoritmos: o núcleo que não muda com a tecnologia.
+> Lógica de programação, complexidade, algoritmos, técnicas de resolução de problemas, estruturas de dados e representação de dados.
 
 **Objetivo:** Escolher a estrutura e o algoritmo certos para cada problema e justificar a escolha pela complexidade.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Essencial · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Essencial · **Níveis:** N1–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [01 Matemática aplicada à computação e backend](../matematica/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=computacao)
 
-**Pré-requisitos:** [01 Matemática e fundamentos matemáticos](../matematica/README.md)
+## 2.1 Lógica de programação
 
-**Relação com:** [03 Linguagens de programação e runtime](../linguagem/README.md) · [06 Banco de dados e persistência](../banco/README.md) · [04 Memória, hardware e sistemas operacionais](../sistemas/README.md)
+N1–N2 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Implementar as estruturas de dados principais do zero.
-- [ ] Resolver problemas com as técnicas de algoritmos (two pointers, sliding window, DP, grafos).
-- [ ] Analisar a complexidade de tempo e espaço de qualquer solução escrita.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Lógica de programação](cc-logica.md) | Lógica de programação | Essencial | ⚪ Não iniciado |
-| [Depuração e resolução de problemas](cc-depuracao.md) | Lógica de programação | Essencial | ⚪ Não iniciado |
-| [Binário, bits e operações bitwise](cc-binario.md) | Representação computacional | Importante | ⚪ Não iniciado |
-| [Codificação de caracteres](cc-codificacao.md) | Representação computacional | Importante | ⚪ Não iniciado |
-| [Arrays, matrizes e strings](ed-arrays-strings.md) | Estruturas de dados | Essencial | ⚪ Não iniciado |
-| [Listas encadeadas, pilhas e filas](ed-listas.md) | Estruturas de dados | Essencial | ⚪ Não iniciado |
-| [Notação assintótica](cx-assintotica.md) | Complexidade de algoritmos | Essencial | ⚪ Não iniciado |
-| [Algoritmos de busca](alg-busca.md) | Algoritmos | Essencial | ⚪ Não iniciado |
-| [Manipulação de arrays e strings](alg-manipulacao.md) | Algoritmos | Essencial | ⚪ Não iniciado |
+| [Algoritmos, variáveis e controle de fluxo](cc-algoritmos.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Funções, modularização e escopo](cc-funcoes.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Recursividade](cc-recursividade.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Depuração e resolução de problemas](cc-depuracao.md) | N1 | Essencial | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 2.2 Complexidade de algoritmos
 
-| Tópico | Grupo | Importância | Status |
+N1–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Recursividade](cc-recursividade.md) | Lógica de programação | Essencial | ⚪ Não iniciado |
-| [Ponto flutuante e precisão](cc-ponto-flutuante.md) | Representação computacional | Essencial | ⚪ Não iniciado |
-| [Hash tables, hash maps e hash sets](ed-hash.md) | Estruturas de dados | Essencial | ⚪ Não iniciado |
-| [Árvores binárias e árvores de busca](ed-arvores.md) | Estruturas de dados | Essencial | ⚪ Não iniciado |
-| [Heaps e filas de prioridade](ed-heaps.md) | Estruturas de dados | Importante | ⚪ Não iniciado |
-| [Grafos](ed-grafos.md) | Estruturas de dados | Essencial | ⚪ Não iniciado |
-| [Algoritmos de ordenação](alg-ordenacao.md) | Algoritmos | Essencial | ⚪ Não iniciado |
-| [Two pointers](alg-two-pointers.md) | Algoritmos | Essencial | ⚪ Não iniciado |
-| [Sliding window](alg-sliding-window.md) | Algoritmos | Essencial | ⚪ Não iniciado |
-| [Prefix sum](alg-prefix-sum.md) | Algoritmos | Importante | ⚪ Não iniciado |
-| [Divisão e conquista](alg-divisao-conquista.md) | Algoritmos | Importante | ⚪ Não iniciado |
+| [Notação assintótica](cx-notacao.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Análise de loops e de código real](cx-analise.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Recorrências, análise amortizada e Teorema Mestre](cx-recorrencias.md) | N3 | Importante | ⚪ Não iniciado |
+| [Classes de complexidade](cx-classes.md) | N4 | Complementar | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 2.3 Algoritmos de busca e ordenação
 
-| Tópico | Grupo | Importância | Status |
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Árvores balanceadas e B-Trees](ed-balanceadas.md) | Estruturas de dados | Importante | ⚪ Não iniciado |
-| [Análise de algoritmos e recorrências](cx-analise.md) | Complexidade de algoritmos | Importante | ⚪ Não iniciado |
-| [Algoritmos gulosos (greedy)](alg-greedy.md) | Algoritmos | Importante | ⚪ Não iniciado |
-| [Backtracking](alg-backtracking.md) | Algoritmos | Importante | ⚪ Não iniciado |
-| [Programação dinâmica](alg-dp.md) | Algoritmos | Importante | ⚪ Não iniciado |
-| [Algoritmos em grafos](alg-grafos.md) | Algoritmos | Essencial | ⚪ Não iniciado |
-| [Algoritmos de caminho mínimo](alg-caminho-minimo.md) | Algoritmos | Importante | ⚪ Não iniciado |
-| [Algoritmos em árvores](alg-arvores.md) | Algoritmos | Importante | ⚪ Não iniciado |
+| [Busca linear e binária](alg-busca.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Ordenações elementares](alg-ordenacao-elementar.md) | N1 | Importante | ⚪ Não iniciado |
+| [Ordenações eficientes](alg-ordenacao-eficiente.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Counting Sort e comparação de ordenações](alg-ordenacao-comparacao.md) | N2 | Importante | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 2.4 Técnicas de resolução de problemas
 
-| Tópico | Grupo | Importância | Status |
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Tries e estruturas avançadas](ed-avancadas.md) | Estruturas de dados | Complementar | ⚪ Não iniciado |
-| [Classes de complexidade computacional](cx-classes.md) | Complexidade de algoritmos | Complementar | ⚪ Não iniciado |
-| [Algoritmos de otimização](alg-otimizacao.md) | Algoritmos | Complementar | ⚪ Não iniciado |
+| [Hashing e frequency counter](tec-hashing.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Two Pointers](tec-two-pointers.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Sliding Window](tec-sliding-window.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Prefix Sum](tec-prefix-sum.md) | N2 | Importante | ⚪ Não iniciado |
+| [Divisão e conquista](tec-divisao-conquista.md) | N2 | Importante | ⚪ Não iniciado |
+| [Greedy Algorithms](tec-greedy.md) | N3 | Importante | ⚪ Não iniciado |
+| [Backtracking](tec-backtracking.md) | N3 | Importante | ⚪ Não iniciado |
+| [Programação dinâmica e memoization](tec-dp.md) | N3 | Importante | ⚪ Não iniciado |
+
+## 2.5 Algoritmos e estruturas avançadas
+
+N3–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Algoritmos de árvores](adv-arvores.md) | N3 | Importante | ⚪ Não iniciado |
+| [BFS, DFS e ordenação topológica](adv-grafos.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Dijkstra e algoritmos de caminho mínimo](adv-caminho-minimo.md) | N3 | Importante | ⚪ Não iniciado |
+| [Union-Find e árvore geradora mínima](adv-union-find.md) | N3 | Complementar | ⚪ Não iniciado |
+| [Algoritmos de otimização](adv-otimizacao.md) | N4 | Complementar | ⚪ Não iniciado |
+
+## 2.6 Estruturas de dados
+
+N1–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Arrays, matrizes e strings](ed-arrays.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Listas encadeadas, stacks e queues](ed-listas.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Hash Maps e Hash Sets](ed-hash.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Árvores binárias e Binary Search Trees](ed-arvores.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Heaps e Priority Queues](ed-heaps.md) | N2 | Importante | ⚪ Não iniciado |
+| [Árvores balanceadas, B-Trees e B+ Trees](ed-balanceadas.md) | N3 | Importante | ⚪ Não iniciado |
+| [Grafos](ed-grafos.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Tries, Bloom Filters e estruturas especializadas](ed-especializadas.md) | N4 | Complementar | ⚪ Não iniciado |
+
+## 2.7 Representação e armazenamento de dados
+
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Binário, hexadecimal, bits e operações bitwise](rep-binario.md) | N1 | Importante | ⚪ Não iniciado |
+| [Representação de inteiros e complemento de dois](rep-inteiros.md) | N2 | Importante | ⚪ Não iniciado |
+| [ASCII, Unicode e UTF-8](rep-texto.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Serialização: JSON, XML e formatos binários](rep-serializacao.md) | N2 | Essencial | ⚪ Não iniciado |
 
 ---
 

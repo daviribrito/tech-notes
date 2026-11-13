@@ -1,35 +1,39 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# CAP, PACELC, ACID e BASE
+# CAP Theorem, PACELC, ACID e BASE
 
-> Os limites teóricos de consistência e disponibilidade.
+> Os limites teóricos entre consistência e disponibilidade.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | Teorias | N3 · Avançado | Essencial | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.2 Teorias | N3 · Avançado | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [CAP, PACELC, ACID e BASE](https://daviribrito.github.io/portfolio/topico.html?id=ds-cap)
+🔗 **No portfólio:** [CAP Theorem, PACELC, ACID e BASE](https://daviribrito.github.io/portfolio/topico.html?id=ds-cap)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] CAP theorem
-- [ ] PACELC
-- [ ] ACID e BASE
-- [ ] Como bancos reais se posicionam
+- CAP Theorem
+- PACELC
+- ACID e BASE
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Justificar a escolha de um banco pelo comportamento sob partição.
+Escolher bancos e estratégias pelo comportamento sob partição.
+
+## Critérios de conclusão
+
+- [ ] Classificar bancos conhecidos por CAP e PACELC e justificar.
 
 ## Pré-requisitos
 
-- [Fundamentos de sistemas distribuídos](../distribuidos/ds-fundamentos.md) · ⚪ Não iniciado
-- [Transações e ACID](../banco/db-acid.md) · ⚪ Não iniciado
+- [Sistemas distribuídos, falhas parciais e particionamento](../distribuidos/ds-conceitos.md) · 11.1 Fundamentos · ⚪ Não iniciado
+- [ACID, Commit e Rollback](../banco/tx-acid.md) · 6.4 Transações e concorrência · ⚪ Não iniciado
 
 ## Libera
 
-- [Modelos de consistência](../distribuidos/ds-consistencia.md) · ⚪ Não iniciado
-- [Replicação e quórum](../distribuidos/ds-replicacao.md) · ⚪ Não iniciado
+- [Strong Consistency, Eventual Consistency e Linearizability](../distribuidos/ds-consistencia.md) · 11.2 Teorias · ⚪ Não iniciado
+- [Replicação e Quorum](../distribuidos/ds-replicacao.md) · 11.2 Teorias · ⚪ Não iniciado
+- [Escolha de tecnologias, arquitetura e trade-offs](../distribuidos/sd-arquitetura.md) · 11.5 System Design · ⚪ Não iniciado
 
 ## Minhas anotações
 

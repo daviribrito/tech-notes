@@ -1,61 +1,73 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# 03 · Linguagens de programação e runtime
+# 03 · Linguagem de programação e Java
 
-> Java como linguagem principal: da sintaxe à JVM, com orientação a objetos, recursos modernos e ferramentas.
+> Java como linguagem principal: fundamentos, orientação a objetos, recursos avançados, JVM e ferramentas.
 
 **Objetivo:** Escrever Java idiomático e entender o que acontece na JVM quando o código roda.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Essencial · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Essencial · **Níveis:** N1–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [02 Ciência da Computação e algoritmos](../computacao/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=linguagem)
 
-**Pré-requisitos:** [02 Ciência da Computação e fundamentos computacionais](../computacao/README.md)
+## 3.1 Fundamentos da linguagem
 
-**Relação com:** [04 Memória, hardware e sistemas operacionais](../sistemas/README.md) · [08 Engenharia de software e arquitetura](../engenharia/README.md) · [07 Engenharia Backend e desenvolvimento de APIs](../backend/README.md)
+N1 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Construir uma aplicação Java completa com Maven ou Gradle.
-- [ ] Usar collections, generics, streams e exceptions corretamente.
-- [ ] Explicar o ciclo de vida de um objeto na JVM e ler um log de GC.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Fundamentos de Java](java-fundamentos.md) | Fundamentos de Java | Essencial | ⚪ Não iniciado |
-| [Classes e objetos](java-classes.md) | Fundamentos de Java | Essencial | ⚪ Não iniciado |
-| [Build e dependências: Maven e Gradle](java-build.md) | Ferramentas e ecossistema | Essencial | ⚪ Não iniciado |
+| [Sintaxe, tipos, variáveis e operadores](java-sintaxe.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Condicionais, loops, métodos, arrays e Strings](java-fluxo.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Classes, objetos e pacotes](java-classes.md) | N1 | Essencial | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 3.2 Programação orientada a objetos
 
-| Tópico | Grupo | Importância | Status |
+N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Pilares da orientação a objetos](java-poo.md) | Programação Orientada a Objetos | Essencial | ⚪ Não iniciado |
-| [Interfaces, composição e associação](java-interfaces.md) | Programação Orientada a Objetos | Essencial | ⚪ Não iniciado |
-| [Collections Framework](java-collections.md) | Java intermediário e avançado | Essencial | ⚪ Não iniciado |
-| [Generics](java-generics.md) | Java intermediário e avançado | Importante | ⚪ Não iniciado |
-| [Exceptions](java-exceptions.md) | Java intermediário e avançado | Essencial | ⚪ Não iniciado |
-| [Lambdas, Streams e Optional](java-funcional.md) | Java intermediário e avançado | Essencial | ⚪ Não iniciado |
-| [Java moderno e imutabilidade](java-moderno.md) | Java intermediário e avançado | Importante | ⚪ Não iniciado |
-| [Debugging e logging](java-debug-logging.md) | Ferramentas e ecossistema | Essencial | ⚪ Não iniciado |
+| [Encapsulamento, abstração, herança e polimorfismo](poo-pilares.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Interfaces, classes abstratas e composição](poo-contratos.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Imutabilidade, records e enums](poo-imutabilidade.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 3.3 Java intermediário e avançado
 
-| Tópico | Grupo | Importância | Status |
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Annotations e reflection](java-annotations-reflection.md) | Java intermediário e avançado | Importante | ⚪ Não iniciado |
-| [I/O e NIO](java-io.md) | Java intermediário e avançado | Importante | ⚪ Não iniciado |
-| [JVM, bytecode, class loading e JIT](java-jvm.md) | Runtime e funcionamento interno | Importante | ⚪ Não iniciado |
-| [Memória da JVM e Garbage Collection](java-memoria-gc.md) | Runtime e funcionamento interno | Essencial | ⚪ Não iniciado |
-| [Profiling](java-profiling.md) | Ferramentas e ecossistema | Importante | ⚪ Não iniciado |
+| [Collections Framework](jav-collections.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Generics](jav-generics.md) | N2 | Importante | ⚪ Não iniciado |
+| [Exceptions](jav-exceptions.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Lambda Expressions, Streams e Optional](jav-funcional.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Date and Time API](jav-datetime.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Annotations e Reflection](jav-annotations-reflection.md) | N3 | Importante | ⚪ Não iniciado |
+| [I/O e NIO](jav-io.md) | N3 | Importante | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 3.4 JVM e funcionamento interno
 
-| Tópico | Grupo | Importância | Status |
+N2–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Java Memory Model e threads](java-jmm.md) | Runtime e funcionamento interno | Importante | ⚪ Não iniciado |
+| [JDK, JRE, JVM, bytecode e class loading](jvm-arquitetura.md) | N2 | Importante | ⚪ Não iniciado |
+| [JIT Compilation e warmup](jvm-jit.md) | N3 | Complementar | ⚪ Não iniciado |
+| [Gerenciamento de memória e Garbage Collection](jvm-memoria-gc.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Java Memory Model, threads e Virtual Threads](jvm-jmm-threads.md) | N4 | Importante | ⚪ Não iniciado |
+| [Performance Tuning](jvm-tuning.md) | N4 | Complementar | ⚪ Não iniciado |
+
+## 3.5 Ferramentas
+
+N1–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Maven, Gradle, dependências e build](tool-build.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Versionamento semântico](tool-semver.md) | N1 | Importante | ⚪ Não iniciado |
+| [Debugging e logging](tool-debug-logging.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Profiling](tool-profiling.md) | N3 | Importante | ⚪ Não iniciado |
 
 ---
 

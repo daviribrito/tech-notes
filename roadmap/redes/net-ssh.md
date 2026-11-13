@@ -4,26 +4,29 @@
 
 > Acesso remoto seguro a servidores.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [05 Redes de computadores e comunicação](README.md) | Aplicação | N1 · Fundamentos | Importante | ⚪ Não iniciado |
+| [05 Redes e protocolos de comunicação](README.md) | 5.2 Protocolos de aplicação | N1 · Fundamentos | Importante | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [SSH](https://daviribrito.github.io/portfolio/topico.html?id=net-ssh)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Chaves pública e privada
-- [ ] Autenticação por chave
-- [ ] Túneis e port forwarding
-- [ ] scp e rsync
+- Chaves pública e privada
+- Autenticação por chave
+- Túneis e port forwarding
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Acessar servidores com segurança e abrir túneis para bancos remotos.
+Acessar servidores e abrir túneis para bancos remotos.
+
+## Critérios de conclusão
+
+- [ ] Acessar um servidor por chave e abrir um túnel para um banco.
 
 ## Pré-requisitos
 
-- [Endereçamento IP, portas, DNS e DHCP](../redes/net-ip-dns.md) · ⚪ Não iniciado
+- [IP, portas e DNS](../redes/net-ip-dns.md) · 5.1 Fundamentos e transporte · ⚪ Não iniciado
 
 ## Minhas anotações
 

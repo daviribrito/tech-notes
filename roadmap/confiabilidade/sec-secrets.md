@@ -1,29 +1,32 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Gestão de segredos
+# Secrets Management
 
 > Guardar e distribuir credenciais com segurança.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.1 Segurança | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Gestão de segredos](https://daviribrito.github.io/portfolio/topico.html?id=sec-secrets)
+🔗 **No portfólio:** [Secrets Management](https://daviribrito.github.io/portfolio/topico.html?id=sec-secrets)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Secrets management
-- [ ] Variáveis de ambiente e cofres
-- [ ] Rotação de credenciais
-- [ ] Segredos fora do repositório
+- Variáveis de ambiente e cofres de segredos
+- Rotação de credenciais
+- Segredos fora do repositório
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Remover credenciais do código e usar um cofre de segredos.
+Nenhuma credencial no código ou no Git.
+
+## Critérios de conclusão
+
+- [ ] Migrar as credenciais de uma aplicação para um cofre de segredos.
 
 ## Pré-requisitos
 
-- [Fundamentos de segurança da informação](../confiabilidade/sec-fundamentos.md) · ⚪ Não iniciado
+- [Fundamentos de segurança](../confiabilidade/sec-fundamentos.md) · 9.1 Segurança · ⚪ Não iniciado
 
 ## Minhas anotações
 

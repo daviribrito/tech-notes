@@ -1,71 +1,101 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# 07 · Engenharia Backend e desenvolvimento de APIs
+# 07 · Engenharia Backend
 
-> APIs, autenticação, idempotência, concorrência, integrações e mensageria.
+> APIs, autenticação, idempotência, concorrência, integrações e mensageria: o que se usa para construir aplicações.
 
 **Objetivo:** Construir serviços corretos sob concorrência, falhas externas e requisições repetidas.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Essencial · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Essencial · **Níveis:** N1–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [03 Linguagem de programação e Java](../linguagem/README.md) · [05 Redes e protocolos de comunicação](../redes/README.md) · [06 Banco de dados e persistência](../banco/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=backend)
 
-**Pré-requisitos:** [03 Linguagens de programação e runtime](../linguagem/README.md) · [05 Redes de computadores e comunicação](../redes/README.md) · [06 Banco de dados e persistência](../banco/README.md)
+## 7.1 Fundamentos backend
 
-**Relação com:** [08 Engenharia de software e arquitetura](../engenharia/README.md) · [09 Segurança, observabilidade e confiabilidade](../confiabilidade/README.md) · [11 Sistemas distribuídos e System Design](../distribuidos/README.md)
+N1–N2 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Entregar uma API REST documentada, com autenticação, validação e tratamento de erros.
-- [ ] Garantir idempotência em operações críticas e testar concorrência.
-- [ ] Integrar serviços externos e filas com resiliência e sem perda de mensagens.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Arquitetura cliente-servidor e ciclo da requisição](be-cliente-servidor.md) | Fundamentos backend | Essencial | ⚪ Não iniciado |
-| [Controllers, services, repositories, DTOs e entities](be-camadas.md) | Fundamentos backend | Essencial | ⚪ Não iniciado |
-| [HTTP para APIs: métodos, status, headers e parâmetros](be-http.md) | HTTP e APIs | Essencial | ⚪ Não iniciado |
+| [Cliente-servidor, Request e Response](be-cliente-servidor.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Controllers, Services, Repositories, DTOs e Entities](be-camadas.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Regras de negócio e validação](be-regras-validacao.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Tratamento de erros](be-erros.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Persistência na aplicação](be-persistencia.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 7.2 HTTP e APIs
 
-| Tópico | Grupo | Importância | Status |
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Validação e tratamento de erros](be-validacao-erros.md) | Fundamentos backend | Essencial | ⚪ Não iniciado |
-| [Integração com banco: JDBC e JPA](be-persistencia.md) | Fundamentos backend | Essencial | ⚪ Não iniciado |
-| [Design de APIs REST](be-rest.md) | HTTP e APIs | Essencial | ⚪ Não iniciado |
-| [OpenAPI e documentação de APIs](be-openapi.md) | HTTP e APIs | Importante | ⚪ Não iniciado |
-| [Sessões, cookies e hashing de senhas](be-sessoes-senhas.md) | Autenticação e autorização | Essencial | ⚪ Não iniciado |
-| [JWT, access e refresh tokens](be-tokens.md) | Autenticação e autorização | Essencial | ⚪ Não iniciado |
-| [Autorização: RBAC, ABAC e permissões](be-autorizacao.md) | Autenticação e autorização | Essencial | ⚪ Não iniciado |
-| [Processamento síncrono e assíncrono](be-sync-async.md) | Concorrência e processamento | Essencial | ⚪ Não iniciado |
-| [Race conditions e thread safety](be-thread-safety.md) | Concorrência e processamento | Essencial | ⚪ Não iniciado |
-| [Consumo de APIs externas e HTTP clients](be-http-clients.md) | Integrações | Essencial | ⚪ Não iniciado |
-| [Webhooks](be-webhooks.md) | Integrações | Importante | ⚪ Não iniciado |
-| [Brokers, filas e pub/sub](be-mensageria.md) | Mensageria | Essencial | ⚪ Não iniciado |
-| [RabbitMQ](be-rabbitmq.md) | Mensageria | Importante | ⚪ Não iniciado |
+| [Métodos HTTP, Status Codes, Headers e parâmetros](api-http.md) | N1 | Essencial | ⚪ Não iniciado |
+| [REST, RESTful APIs e API Design](api-rest.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Versionamento, paginação, filtragem e ordenação](api-colecoes.md) | N2 | Essencial | ⚪ Não iniciado |
+| [OpenAPI e Swagger](api-openapi.md) | N2 | Importante | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 7.3 Autenticação e autorização
 
-| Tópico | Grupo | Importância | Status |
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [OAuth 2.0 e OpenID Connect](be-oauth.md) | Autenticação e autorização | Importante | ⚪ Não iniciado |
-| [Idempotência](be-idempotencia.md) | Idempotência | Essencial | ⚪ Não iniciado |
-| [Executors, thread pools e CompletableFuture](be-executors.md) | Concorrência e processamento | Essencial | ⚪ Não iniciado |
-| [Virtual threads e processamento paralelo](be-virtual-threads.md) | Concorrência e processamento | Importante | ⚪ Não iniciado |
-| [Retry, circuit breaker, fallback e bulkhead](be-resiliencia.md) | Integrações | Essencial | ⚪ Não iniciado |
-| [Apache Kafka](be-kafka.md) | Mensageria | Importante | ⚪ Não iniciado |
-| [Arquitetura orientada a eventos](be-eventos.md) | Mensageria | Importante | ⚪ Não iniciado |
-| [Transactional outbox](be-outbox.md) | Mensageria | Essencial | ⚪ Não iniciado |
+| [Sessions, Cookies e hashing de senhas](auth-sessoes.md) | N2 | Essencial | ⚪ Não iniciado |
+| [JWT, Access e Refresh Tokens](auth-tokens.md) | N2 | Essencial | ⚪ Não iniciado |
+| [OAuth 2.0 e OpenID Connect](auth-oauth.md) | N3 | Importante | ⚪ Não iniciado |
+| [RBAC, ABAC e controle de permissões](auth-autorizacao.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 7.4 Idempotência
 
-| Tópico | Grupo | Importância | Status |
+N2–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Backpressure e controle de carga](be-backpressure.md) | Concorrência e processamento | Importante | ⚪ Não iniciado |
-| [Event sourcing e CQRS](be-event-sourcing-cqrs.md) | Mensageria | Complementar | ⚪ Não iniciado |
-| [Saga pattern](be-saga.md) | Mensageria | Importante | ⚪ Não iniciado |
+| [Conceito, finalidade e idempotência em HTTP](idem-conceito.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Idempotency Keys e prevenção de duplicidade](idem-chaves.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Concorrência e atomicidade](idem-concorrencia.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Idempotência em pagamentos](idem-pagamentos.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Filas, webhooks, deduplicação e retry seguro](idem-mensagens.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Exactly-once Effect e as suas limitações](idem-exactly-once.md) | N4 | Importante | ⚪ Não iniciado |
+
+## 7.5 Concorrência e processamento
+
+N2–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Processamento síncrono e assíncrono](conc-sync-async.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Multithreading, race conditions e Thread Safety](conc-thread-safety.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Locks e Synchronization em Java](conc-locks.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Executors, Thread Pools, Futures e CompletableFuture](conc-executors.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Virtual Threads e Parallel Processing](conc-virtual-threads.md) | N3 | Importante | ⚪ Não iniciado |
+| [Backpressure](conc-backpressure.md) | N4 | Importante | ⚪ Não iniciado |
+
+## 7.6 Integrações
+
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [APIs externas, HTTP Clients e Timeouts](int-clientes.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Webhooks](int-webhooks.md) | N2 | Importante | ⚪ Não iniciado |
+| [Retry, Exponential Backoff, Circuit Breaker, Fallback e Bulkhead](int-resiliencia.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Compatibilidade de contratos](int-contratos.md) | N3 | Importante | ⚪ Não iniciado |
+
+## 7.7 Mensageria
+
+N2–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Message Brokers, Queues, Producers e Consumers](msg-fundamentos.md) | N2 | Essencial | ⚪ Não iniciado |
+| [RabbitMQ](msg-rabbitmq.md) | N2 | Importante | ⚪ Não iniciado |
+| [Kafka e Consumer Groups](msg-kafka.md) | N3 | Importante | ⚪ Não iniciado |
+| [Event-Driven Architecture](msg-eda.md) | N3 | Importante | ⚪ Não iniciado |
+| [Transactional Outbox](msg-outbox.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Event Sourcing e CQRS](msg-event-sourcing.md) | N4 | Complementar | ⚪ Não iniciado |
+| [Saga Pattern](msg-saga.md) | N4 | Importante | ⚪ Não iniciado |
 
 ---
 

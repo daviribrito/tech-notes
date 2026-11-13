@@ -1,30 +1,33 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Deployments e rollback
+# Deployments, Rollback, Blue-Green e Canary
 
 > Publicar versões com segurança.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [10 DevOps, infraestrutura e Cloud](README.md) | Containers e CI/CD | N3 · Avançado | Importante | ⚪ Não iniciado |
+| [10 DevOps, infraestrutura e Cloud](README.md) | 10.2 Containers e CI/CD | N3 · Avançado | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Deployments e rollback](https://daviribrito.github.io/portfolio/topico.html?id=dev-deploy)
+🔗 **No portfólio:** [Deployments, Rollback, Blue-Green e Canary](https://daviribrito.github.io/portfolio/topico.html?id=dev-deploy)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Deployments
-- [ ] Rolling update
-- [ ] Blue-green e canary deployments
-- [ ] Feature flags
-- [ ] Rollback
+- Deployments e rolling update
+- Rollback
+- Blue-Green Deployments
+- Canary Deployments
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Publicar uma versão gradualmente e voltar atrás em caso de erro.
+Publicar sem downtime e voltar atrás rapidamente.
+
+## Critérios de conclusão
+
+- [ ] Fazer um deploy canary com rollback automático por métrica.
 
 ## Pré-requisitos
 
-- [CI/CD e GitHub Actions](../devops/dev-cicd.md) · ⚪ Não iniciado
+- [CI/CD, GitHub Actions e Build Pipelines](../devops/dev-cicd.md) · 10.2 Containers e CI/CD · ⚪ Não iniciado
 
 ## Minhas anotações
 

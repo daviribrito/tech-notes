@@ -4,30 +4,34 @@
 
 > O começo de todo system design.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | System Design | N3 · Avançado | Essencial | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.5 System Design | N3 · Avançado | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Requisitos e estimativas](https://daviribrito.github.io/portfolio/topico.html?id=sd-requisitos)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Requisitos funcionais e não funcionais
-- [ ] Estimativa de capacidade
-- [ ] Estimativa de tráfego
-- [ ] Estimativa de armazenamento
+- Requisitos funcionais e não funcionais
+- Estimativa de capacidade
+- Estimativa de tráfego e armazenamento
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Estimar QPS e armazenamento de um sistema antes de desenhá-lo.
+Dimensionar um sistema antes de desenhá-lo.
+
+## Critérios de conclusão
+
+- [ ] Estimar requisições por segundo e armazenamento de um sistema real.
 
 ## Pré-requisitos
 
-- [Escalabilidade e arquitetura stateless](../distribuidos/ds-escalabilidade.md) · ⚪ Não iniciado
+- [Vertical e Horizontal Scaling e Stateless Architecture](../distribuidos/ds-scaling.md) · 11.3 Escalabilidade · ⚪ Não iniciado
+- [Métricas, latência e capacidade](../matematica/mat-metricas.md) · 1.4 Probabilidade e estatística aplicada · ⚪ Não iniciado
 
 ## Libera
 
-- [Arquitetura e trade-offs](../distribuidos/sd-arquitetura.md) · ⚪ Não iniciado
+- [Escolha de tecnologias, arquitetura e trade-offs](../distribuidos/sd-arquitetura.md) · 11.5 System Design · ⚪ Não iniciado
 
 ## Minhas anotações
 

@@ -1,33 +1,36 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Coesão, acoplamento e separação de responsabilidades
+# Coesão e acoplamento
 
 > Medir e melhorar a estrutura do código.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [08 Engenharia de software e arquitetura](README.md) | Princípios de engenharia | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [08 Engenharia de software e arquitetura](README.md) | 8.1 Princípios de engenharia | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Coesão, acoplamento e separação de responsabilidades](https://daviribrito.github.io/portfolio/topico.html?id=es-acoplamento)
+🔗 **No portfólio:** [Coesão e acoplamento](https://daviribrito.github.io/portfolio/topico.html?id=es-acoplamento)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Separation of concerns
-- [ ] Coesão
-- [ ] Acoplamento
-- [ ] Dependências entre módulos
+- Coesão
+- Acoplamento
+- Separação de responsabilidades
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Identificar módulos acoplados demais e separá-los.
+Módulos que mudam por um motivo só.
+
+## Critérios de conclusão
+
+- [ ] Identificar acoplamento indevido entre módulos e propor a separação.
 
 ## Pré-requisitos
 
-- [DRY, KISS, YAGNI e clean code](../engenharia/es-principios.md) · ⚪ Não iniciado
+- [Clean Code, DRY, KISS e YAGNI](../engenharia/es-clean-code.md) · 8.1 Princípios de engenharia · ⚪ Não iniciado
 
 ## Libera
 
-- [Monólito modular](../engenharia/es-monolito-modular.md) · ⚪ Não iniciado
+- [Modular Monolith](../engenharia/arq-monolito-modular.md) · 8.3 Arquitetura · ⚪ Não iniciado
 
 ## Minhas anotações
 

@@ -1,30 +1,34 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Distributed tracing e OpenTelemetry
+# Distributed Tracing e OpenTelemetry
 
 > Seguir uma requisição entre serviços.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Observabilidade | N3 · Avançado | Importante | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.2 Observabilidade | N3 · Avançado | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Distributed tracing e OpenTelemetry](https://daviribrito.github.io/portfolio/topico.html?id=obs-tracing)
+🔗 **No portfólio:** [Distributed Tracing e OpenTelemetry](https://daviribrito.github.io/portfolio/topico.html?id=obs-tracing)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Distributed tracing
-- [ ] Spans e propagação de contexto
-- [ ] OpenTelemetry
-- [ ] Amostragem
+- Distributed Tracing
+- Spans e propagação de contexto
+- OpenTelemetry
+- Amostragem
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Encontrar qual serviço deixa uma requisição lenta.
+Descobrir qual serviço deixa uma requisição lenta.
+
+## Critérios de conclusão
+
+- [ ] Instrumentar dois serviços com OpenTelemetry e analisar um trace.
 
 ## Pré-requisitos
 
-- [Logging estruturado, correlation ID e trace ID](../confiabilidade/obs-logs.md) · ⚪ Não iniciado
-- [Comunicação entre serviços](../redes/net-servicos.md) · ⚪ Não iniciado
+- [Logging, Correlation ID e Trace ID](../confiabilidade/obs-logs.md) · 9.2 Observabilidade · ⚪ Não iniciado
+- [Comunicação entre serviços](../redes/net-servicos.md) · 5.3 Infraestrutura e desempenho · ⚪ Não iniciado
 
 ## Minhas anotações
 

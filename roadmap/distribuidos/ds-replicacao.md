@@ -1,35 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Replicação e quórum
+# Replicação e Quorum
 
-> Teoria da replicação de dados.
+> A teoria por trás da replicação de dados.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | Teorias | N4 · Especialização | Importante | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.2 Teorias | N4 · Especialização | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Replicação e quórum](https://daviribrito.github.io/portfolio/topico.html?id=ds-replicacao)
+🔗 **No portfólio:** [Replicação e Quorum](https://daviribrito.github.io/portfolio/topico.html?id=ds-replicacao)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Líder e seguidores
-- [ ] Multi-líder
-- [ ] Sem líder (leaderless)
-- [ ] Quorum de leitura e escrita
-- [ ] Resolução de conflitos
+- Líder e seguidores
+- Multi-líder e sem líder
+- Quorum de leitura e escrita
+- Resolução de conflitos
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Calcular quantas réplicas precisam responder para uma leitura consistente.
+Configurar replicação e consistência de bancos distribuídos.
+
+## Critérios de conclusão
+
+- [ ] Calcular os quóruns de leitura e escrita para uma garantia de consistência.
 
 ## Pré-requisitos
 
-- [CAP, PACELC, ACID e BASE](../distribuidos/ds-cap.md) · ⚪ Não iniciado
-- [Replicação, read replicas e sharding na prática](../banco/db-replicacao.md) · ⚪ Não iniciado
+- [CAP Theorem, PACELC, ACID e BASE](../distribuidos/ds-cap.md) · 11.2 Teorias · ⚪ Não iniciado
+- [Replicação e Read Replicas](../banco/op-replicacao.md) · 6.6 Operação · ⚪ Não iniciado
 
 ## Libera
 
-- [Consenso e eleição de líder: Raft e Paxos](../distribuidos/ds-consenso.md) · ⚪ Não iniciado
+- [Leader Election, Raft e Paxos](../distribuidos/ds-consenso.md) · 11.4 Algoritmos distribuídos · ⚪ Não iniciado
 
 ## Minhas anotações
 

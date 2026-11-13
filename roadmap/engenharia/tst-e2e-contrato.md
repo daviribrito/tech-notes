@@ -1,29 +1,32 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Testes ponta a ponta e de contrato
+# Testes E2E e Contract Testing
 
 > Validar fluxos completos e acordos entre serviços.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [08 Engenharia de software e arquitetura](README.md) | Testes | N3 · Avançado | Importante | ⚪ Não iniciado |
+| [08 Engenharia de software e arquitetura](README.md) | 8.4 Testes | N3 · Avançado | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Testes ponta a ponta e de contrato](https://daviribrito.github.io/portfolio/topico.html?id=tst-e2e-contrato)
+🔗 **No portfólio:** [Testes E2E e Contract Testing](https://daviribrito.github.io/portfolio/topico.html?id=tst-e2e-contrato)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] End-to-end testing
-- [ ] Contract testing
-- [ ] Pact e Spring Cloud Contract
-- [ ] Custo e fragilidade dos E2E
+- Testes E2E
+- Contract Testing
+- Custo e fragilidade dos E2E
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Garantir que uma mudança de API não quebre os consumidores.
+Evitar que uma mudança de API quebre os consumidores.
+
+## Critérios de conclusão
+
+- [ ] Criar um teste de contrato entre um produtor e um consumidor.
 
 ## Pré-requisitos
 
-- [Testes de integração e Testcontainers](../engenharia/tst-integracao.md) · ⚪ Não iniciado
+- [Testes de integração com Testcontainers](../engenharia/tst-integracao.md) · 8.4 Testes · ⚪ Não iniciado
 
 ## Minhas anotações
 

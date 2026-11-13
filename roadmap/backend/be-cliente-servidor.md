@@ -1,36 +1,39 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Arquitetura cliente-servidor e ciclo da requisição
+# Cliente-servidor, Request e Response
 
 > O caminho de uma requisição até a resposta.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [07 Engenharia Backend e desenvolvimento de APIs](README.md) | Fundamentos backend | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [07 Engenharia Backend](README.md) | 7.1 Fundamentos backend | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Arquitetura cliente-servidor e ciclo da requisição](https://daviribrito.github.io/portfolio/topico.html?id=be-cliente-servidor)
+🔗 **No portfólio:** [Cliente-servidor, Request e Response](https://daviribrito.github.io/portfolio/topico.html?id=be-cliente-servidor)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Arquitetura cliente-servidor
-- [ ] Request e response
-- [ ] Ciclo de vida de uma requisição no servidor
-- [ ] Stateless e stateful
+- Cliente-servidor
+- Request e Response
+- Ciclo de vida de uma requisição
+- Stateless e stateful
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Descrever cada etapa de uma requisição na sua API.
+Entender cada etapa de uma requisição na sua API.
+
+## Critérios de conclusão
+
+- [ ] Descrever o ciclo completo de uma requisição na sua aplicação.
 
 ## Pré-requisitos
 
-- [Fundamentos de redes e modelos OSI e TCP/IP](../redes/net-fundamentos.md) · ⚪ Não iniciado
+- [Modelo OSI e TCP/IP](../redes/net-modelos.md) · 5.1 Fundamentos e transporte · ⚪ Não iniciado
 
 ## Libera
 
-- [Controllers, services, repositories, DTOs e entities](../backend/be-camadas.md) · ⚪ Não iniciado
-- [HTTP para APIs: métodos, status, headers e parâmetros](../backend/be-http.md) · ⚪ Não iniciado
-- [Processamento síncrono e assíncrono](../backend/be-sync-async.md) · ⚪ Não iniciado
-- [Health checks](../confiabilidade/obs-health.md) · ⚪ Não iniciado
+- [Controllers, Services, Repositories, DTOs e Entities](../backend/be-camadas.md) · 7.1 Fundamentos backend · ⚪ Não iniciado
+- [Métodos HTTP, Status Codes, Headers e parâmetros](../backend/api-http.md) · 7.2 HTTP e APIs · ⚪ Não iniciado
+- [Processamento síncrono e assíncrono](../backend/conc-sync-async.md) · 7.5 Concorrência e processamento · ⚪ Não iniciado
 
 ## Minhas anotações
 

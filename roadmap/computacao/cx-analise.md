@@ -1,36 +1,37 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Análise de algoritmos e recorrências
+# Análise de loops e de código real
 
-> Calcular a complexidade de loops, recursões e operações amortizadas.
+> Calcular a complexidade do código que você escreve.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Complexidade de algoritmos | N3 · Avançado | Importante | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.2 Complexidade de algoritmos | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Análise de algoritmos e recorrências](https://daviribrito.github.io/portfolio/topico.html?id=cx-analise)
+🔗 **No portfólio:** [Análise de loops e de código real](https://daviribrito.github.io/portfolio/topico.html?id=cx-analise)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Análise de loops
-- [ ] Análise de recursividade
-- [ ] Complexidade amortizada
-- [ ] Recorrências
-- [ ] Teorema Mestre
+- Análise de loops
+- Loops aninhados
+- Custo de chamadas de biblioteca
+- Espaço auxiliar
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Provar a complexidade de um merge sort e explicar o custo amortizado do ArrayList.
+Encontrar o trecho quadrático escondido em um endpoint lento.
+
+## Critérios de conclusão
+
+- [ ] Analisar a complexidade de um método real e propor uma versão mais eficiente.
 
 ## Pré-requisitos
 
-- [Notação assintótica](../computacao/cx-assintotica.md) · ⚪ Não iniciado
-- [Recursividade](../computacao/cc-recursividade.md) · ⚪ Não iniciado
-- [Sequências e progressões (PA e PG)](../matematica/mat-sequencias.md) · ⚪ Não iniciado
+- [Notação assintótica](../computacao/cx-notacao.md) · 2.2 Complexidade de algoritmos · ⚪ Não iniciado
 
 ## Libera
 
-- [Classes de complexidade computacional](../computacao/cx-classes.md) · ⚪ Não iniciado
+- [Recorrências, análise amortizada e Teorema Mestre](../computacao/cx-recorrencias.md) · 2.2 Complexidade de algoritmos · ⚪ Não iniciado
 
 ## Minhas anotações
 

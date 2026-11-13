@@ -1,29 +1,32 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Backup e disaster recovery
+# Backup e Disaster Recovery
 
 > Voltar ao ar depois de um desastre.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Confiabilidade | N3 · Avançado | Importante | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.3 Confiabilidade | N3 · Avançado | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Backup e disaster recovery](https://daviribrito.github.io/portfolio/topico.html?id=conf-dr)
+🔗 **No portfólio:** [Backup e Disaster Recovery](https://daviribrito.github.io/portfolio/topico.html?id=conf-dr)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] RPO e RTO
-- [ ] Estratégias de backup
-- [ ] Disaster recovery
-- [ ] Testes de recuperação
+- RPO e RTO
+- Estratégias de recuperação
+- Testes de recuperação
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Escrever e testar um plano de recuperação.
+Planos de recuperação testados, não só escritos.
+
+## Critérios de conclusão
+
+- [ ] Escrever e executar um plano de recuperação simulado.
 
 ## Pré-requisitos
 
-- [Backup, monitoramento e recuperação](../banco/db-operacao.md) · ⚪ Não iniciado
+- [Backup, Restore e recuperação de falhas](../banco/op-backup.md) · 6.6 Operação · ⚪ Não iniciado
 
 ## Minhas anotações
 

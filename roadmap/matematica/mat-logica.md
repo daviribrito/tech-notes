@@ -1,26 +1,30 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Lógica matemática e proposicional
+# Lógica proposicional e equivalências
 
-> Proposições, conectivos e regras de inferência que estão por trás de todo if.
+> Proposições, operadores e as equivalências que estão por trás de todo if.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [01 Matemática e fundamentos matemáticos](README.md) | Discreta | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [01 Matemática aplicada à computação e backend](README.md) | 1.1 Raciocínio lógico e matemática discreta | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Lógica matemática e proposicional](https://daviribrito.github.io/portfolio/topico.html?id=mat-logica)
+🔗 **No portfólio:** [Lógica proposicional e equivalências](https://daviribrito.github.io/portfolio/topico.html?id=mat-logica)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Proposições e conectivos
-- [ ] Tabela-verdade
-- [ ] Leis de De Morgan
-- [ ] Implicação e equivalência
-- [ ] Quantificadores
+- Lógica proposicional
+- Operadores lógicos e tabelas-verdade
+- Equivalências lógicas e leis de De Morgan
+- Implicação e contrapositiva
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Simplificar condicionais complexas e escrever regras de autorização sem casos esquecidos.
+Simplificar condicionais, regras de autorização e filtros de consulta sem mudar o comportamento.
+
+## Critérios de conclusão
+
+- [ ] Montar a tabela-verdade de uma expressão com três variáveis.
+- [ ] Simplificar um if composto e provar que o comportamento é o mesmo.
 
 ## Pré-requisitos
 
@@ -28,9 +32,9 @@ Nenhum: pode começar por aqui.
 
 ## Libera
 
-- [Teoria dos conjuntos](../matematica/mat-conjuntos.md) · ⚪ Não iniciado
-- [Matemática discreta](../matematica/mat-discreta.md) · ⚪ Não iniciado
-- [Lógica de programação](../computacao/cc-logica.md) · ⚪ Não iniciado
+- [Predicados e quantificadores](../matematica/mat-predicados.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
+- [Conjuntos, relações e funções](../matematica/mat-conjuntos.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
+- [Algoritmos, variáveis e controle de fluxo](../computacao/cc-algoritmos.md) · 2.1 Lógica de programação · ⚪ Não iniciado
 
 ## Minhas anotações
 

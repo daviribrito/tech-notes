@@ -2,47 +2,66 @@
 
 # 11 · Sistemas distribuídos e System Design
 
-> A especialização: consistência, replicação, escalabilidade, consenso e desenho de sistemas de larga escala.
+> A especialização: consistência, replicação, escalabilidade, algoritmos distribuídos e desenho de sistemas de larga escala.
 
 **Objetivo:** Projetar sistemas que escalam e toleram falhas, explicando os trade-offs de cada decisão.
 
-**Nível recomendado:** N3–N4 · **Prioridade:** Importante · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Importante · **Níveis:** N3–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [07 Engenharia Backend](../backend/README.md) · [06 Banco de dados e persistência](../banco/README.md) · [05 Redes e protocolos de comunicação](../redes/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=distribuidos)
 
-**Pré-requisitos:** [07 Engenharia Backend e desenvolvimento de APIs](../backend/README.md) · [06 Banco de dados e persistência](../banco/README.md) · [05 Redes de computadores e comunicação](../redes/README.md)
+## 11.1 Fundamentos
 
-**Relação com:** [09 Segurança, observabilidade e confiabilidade](../confiabilidade/README.md) · [10 DevOps, infraestrutura e Cloud](../devops/README.md)
+N3–N4 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Explicar CAP, PACELC e modelos de consistência com exemplos reais.
-- [ ] Conduzir um system design completo com estimativas e trade-offs.
-- [ ] Escolher estratégias de replicação, particionamento e cache para um caso dado.
-
-## N3 · Avançado
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Fundamentos de sistemas distribuídos](ds-fundamentos.md) | Fundamentos | Essencial | ⚪ Não iniciado |
-| [CAP, PACELC, ACID e BASE](ds-cap.md) | Teorias | Essencial | ⚪ Não iniciado |
-| [Escalabilidade e arquitetura stateless](ds-escalabilidade.md) | Escalabilidade | Essencial | ⚪ Não iniciado |
-| [Cache distribuído](ds-cache.md) | Escalabilidade | Essencial | ⚪ Não iniciado |
-| [Requisitos e estimativas](sd-requisitos.md) | System Design | Essencial | ⚪ Não iniciado |
+| [Sistemas distribuídos, falhas parciais e particionamento](ds-conceitos.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Relógios distribuídos, Lamport Timestamps e Vector Clocks](ds-relogios.md) | N4 | Importante | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 11.2 Teorias
 
-| Tópico | Grupo | Importância | Status |
+N3–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Tempo e ordem: relógios distribuídos](ds-tempo.md) | Fundamentos | Importante | ⚪ Não iniciado |
-| [Modelos de consistência](ds-consistencia.md) | Teorias | Importante | ⚪ Não iniciado |
-| [Replicação e quórum](ds-replicacao.md) | Teorias | Importante | ⚪ Não iniciado |
-| [Particionamento, sharding e consistent hashing](ds-particionamento.md) | Escalabilidade | Importante | ⚪ Não iniciado |
-| [Capacity planning e análise de gargalos](ds-capacidade.md) | Escalabilidade | Importante | ⚪ Não iniciado |
-| [Consenso e eleição de líder: Raft e Paxos](ds-consenso.md) | Algoritmos distribuídos | Complementar | ⚪ Não iniciado |
-| [Locks distribuídos, gossip e two-phase commit](ds-coordenacao.md) | Algoritmos distribuídos | Importante | ⚪ Não iniciado |
-| [Arquitetura e trade-offs](sd-arquitetura.md) | System Design | Essencial | ⚪ Não iniciado |
-| [Design de sistemas de larga escala](sd-larga-escala.md) | System Design | Importante | ⚪ Não iniciado |
+| [CAP Theorem, PACELC, ACID e BASE](ds-cap.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Strong Consistency, Eventual Consistency e Linearizability](ds-consistencia.md) | N4 | Importante | ⚪ Não iniciado |
+| [Replicação e Quorum](ds-replicacao.md) | N4 | Importante | ⚪ Não iniciado |
+
+## 11.3 Escalabilidade
+
+N3–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Vertical e Horizontal Scaling e Stateless Architecture](ds-scaling.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Distributed Caching](ds-cache.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Database Sharding e Hot Partitions](ds-sharding.md) | N4 | Importante | ⚪ Não iniciado |
+| [Capacity Planning e Bottleneck Analysis](ds-capacidade.md) | N4 | Importante | ⚪ Não iniciado |
+
+## 11.4 Algoritmos distribuídos
+
+N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Consistent Hashing](ds-consistent-hashing.md) | N4 | Importante | ⚪ Não iniciado |
+| [Leader Election, Raft e Paxos](ds-consenso.md) | N4 | Complementar | ⚪ Não iniciado |
+| [Gossip Protocol](ds-gossip.md) | N4 | Complementar | ⚪ Não iniciado |
+| [Distributed Locks e Two-Phase Commit](ds-locks-2pc.md) | N4 | Importante | ⚪ Não iniciado |
+
+## 11.5 System Design
+
+N3–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Requisitos e estimativas](sd-requisitos.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Escolha de tecnologias, arquitetura e trade-offs](sd-arquitetura.md) | N4 | Essencial | ⚪ Não iniciado |
+| [Sistemas de larga escala](sd-larga-escala.md) | N4 | Importante | ⚪ Não iniciado |
 
 ---
 

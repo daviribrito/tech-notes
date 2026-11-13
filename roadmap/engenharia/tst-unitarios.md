@@ -4,34 +4,37 @@
 
 > Testar regras isoladas de forma rápida.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [08 Engenharia de software e arquitetura](README.md) | Testes | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [08 Engenharia de software e arquitetura](README.md) | 8.4 Testes | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Testes unitários com JUnit](https://daviribrito.github.io/portfolio/topico.html?id=tst-unitarios)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Unit testing
-- [ ] JUnit 5
-- [ ] Arrange, Act, Assert
-- [ ] Testes parametrizados
-- [ ] Pirâmide de testes
+- Testes unitários
+- JUnit 5
+- Arrange, Act, Assert
+- Testes parametrizados
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Cobrir as regras de negócio com testes rápidos.
+Proteger regras de negócio contra regressões.
+
+## Critérios de conclusão
+
+- [ ] Cobrir as regras de negócio de um serviço com testes rápidos e legíveis.
 
 ## Pré-requisitos
 
-- [Classes e objetos](../linguagem/java-classes.md) · ⚪ Não iniciado
+- [Classes, objetos e pacotes](../linguagem/java-classes.md) · 3.1 Fundamentos da linguagem · ⚪ Não iniciado
 
 ## Libera
 
-- [Refatoração e dívida técnica](../engenharia/es-refactoring.md) · ⚪ Não iniciado
-- [Mocks e stubs com Mockito](../engenharia/tst-mocks.md) · ⚪ Não iniciado
-- [Testes de integração e Testcontainers](../engenharia/tst-integracao.md) · ⚪ Não iniciado
-- [CI/CD e GitHub Actions](../devops/dev-cicd.md) · ⚪ Não iniciado
+- [Refactoring](../engenharia/es-refactoring.md) · 8.1 Princípios de engenharia · ⚪ Não iniciado
+- [Mockito, mocks e stubs](../engenharia/tst-mockito.md) · 8.4 Testes · ⚪ Não iniciado
+- [Testes de integração com Testcontainers](../engenharia/tst-integracao.md) · 8.4 Testes · ⚪ Não iniciado
+- [CI/CD, GitHub Actions e Build Pipelines](../devops/dev-cicd.md) · 10.2 Containers e CI/CD · ⚪ Não iniciado
 
 ## Minhas anotações
 

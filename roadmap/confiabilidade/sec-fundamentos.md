@@ -1,25 +1,29 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Fundamentos de segurança da informação
+# Fundamentos de segurança
 
-> Os princípios que orientam todas as decisões de segurança.
+> Os princípios que orientam as decisões de segurança.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Segurança | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.1 Segurança | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Fundamentos de segurança da informação](https://daviribrito.github.io/portfolio/topico.html?id=sec-fundamentos)
+🔗 **No portfólio:** [Fundamentos de segurança](https://daviribrito.github.io/portfolio/topico.html?id=sec-fundamentos)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Confidencialidade, integridade e disponibilidade
-- [ ] Autenticação e autorização
-- [ ] Menor privilégio
-- [ ] Defesa em profundidade
+- Confidencialidade, integridade e disponibilidade
+- Autenticação e autorização
+- Menor privilégio
+- Defesa em profundidade
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Avaliar uma funcionalidade pelos princípios antes de implementar.
+Avaliar cada funcionalidade pelos princípios antes de implementar.
+
+## Critérios de conclusão
+
+- [ ] Analisar uma funcionalidade pelos princípios e listar os riscos.
 
 ## Pré-requisitos
 
@@ -27,10 +31,10 @@ Nenhum: pode começar por aqui.
 
 ## Libera
 
-- [Criptografia e hashing](../confiabilidade/sec-cripto.md) · ⚪ Não iniciado
-- [OWASP Top 10 e OWASP API Security](../confiabilidade/sec-owasp.md) · ⚪ Não iniciado
-- [Gestão de segredos](../confiabilidade/sec-secrets.md) · ⚪ Não iniciado
-- [IAM](../devops/dev-iam.md) · ⚪ Não iniciado
+- [Criptografia e hashing](../confiabilidade/sec-cripto.md) · 9.1 Segurança · ⚪ Não iniciado
+- [OWASP Top 10 e OWASP API Security](../confiabilidade/sec-owasp.md) · 9.1 Segurança · ⚪ Não iniciado
+- [Secrets Management](../confiabilidade/sec-secrets.md) · 9.1 Segurança · ⚪ Não iniciado
+- [IAM](../devops/cloud-iam.md) · 10.3 Cloud · ⚪ Não iniciado
 
 ## Minhas anotações
 

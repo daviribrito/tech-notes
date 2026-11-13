@@ -1,37 +1,41 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Controllers, services, repositories, DTOs e entities
+# Controllers, Services, Repositories, DTOs e Entities
 
 > A organização básica de uma aplicação backend.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [07 Engenharia Backend e desenvolvimento de APIs](README.md) | Fundamentos backend | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [07 Engenharia Backend](README.md) | 7.1 Fundamentos backend | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Controllers, services, repositories, DTOs e entities](https://daviribrito.github.io/portfolio/topico.html?id=be-camadas)
+🔗 **No portfólio:** [Controllers, Services, Repositories, DTOs e Entities](https://daviribrito.github.io/portfolio/topico.html?id=be-camadas)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Controllers, services e repositories
-- [ ] DTOs e entities
-- [ ] Onde ficam as regras de negócio
-- [ ] Mapeamento entre camadas
+- Controllers, Services e Repositories
+- DTOs e Entities
+- Mapeamento entre camadas
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Estruturar um endpoint com responsabilidades separadas.
+Estruturar endpoints com responsabilidades separadas.
+
+## Critérios de conclusão
+
+- [ ] Implementar um CRUD com as camadas bem separadas.
 
 ## Pré-requisitos
 
-- [Arquitetura cliente-servidor e ciclo da requisição](../backend/be-cliente-servidor.md) · ⚪ Não iniciado
-- [Classes e objetos](../linguagem/java-classes.md) · ⚪ Não iniciado
+- [Cliente-servidor, Request e Response](../backend/be-cliente-servidor.md) · 7.1 Fundamentos backend · ⚪ Não iniciado
+- [Classes, objetos e pacotes](../linguagem/java-classes.md) · 3.1 Fundamentos da linguagem · ⚪ Não iniciado
 
 ## Libera
 
-- [Validação e tratamento de erros](../backend/be-validacao-erros.md) · ⚪ Não iniciado
-- [Integração com banco: JDBC e JPA](../backend/be-persistencia.md) · ⚪ Não iniciado
-- [Padrões de backend](../engenharia/es-patterns-backend.md) · ⚪ Não iniciado
-- [Arquitetura em camadas e MVC](../engenharia/es-arq-camadas.md) · ⚪ Não iniciado
+- [Regras de negócio e validação](../backend/be-regras-validacao.md) · 7.1 Fundamentos backend · ⚪ Não iniciado
+- [Tratamento de erros](../backend/be-erros.md) · 7.1 Fundamentos backend · ⚪ Não iniciado
+- [Persistência na aplicação](../backend/be-persistencia.md) · 7.1 Fundamentos backend · ⚪ Não iniciado
+- [Padrões de aplicação backend](../engenharia/dp-backend.md) · 8.2 Design patterns · ⚪ Não iniciado
+- [Layered Architecture e MVC](../engenharia/arq-camadas.md) · 8.3 Arquitetura · ⚪ Não iniciado
 
 ## Minhas anotações
 

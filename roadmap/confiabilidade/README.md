@@ -6,50 +6,48 @@
 
 **Objetivo:** Construir serviços seguros por padrão, observáveis e com metas de confiabilidade claras.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Essencial · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Essencial · **Níveis:** N1–N3 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [07 Engenharia Backend](../backend/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=confiabilidade)
 
-**Pré-requisitos:** [07 Engenharia Backend e desenvolvimento de APIs](../backend/README.md)
+## 9.1 Segurança
 
-**Relação com:** [10 DevOps, infraestrutura e Cloud](../devops/README.md) · [11 Sistemas distribuídos e System Design](../distribuidos/README.md)
+N1–N3 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Revisar uma API contra o OWASP API Security Top 10.
-- [ ] Instrumentar logs, métricas e traces e criar alertas úteis.
-- [ ] Definir SLOs e conduzir uma análise de causa raiz.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Fundamentos de segurança da informação](sec-fundamentos.md) | Segurança | Essencial | ⚪ Não iniciado |
+| [Fundamentos de segurança](sec-fundamentos.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Criptografia e hashing](sec-cripto.md) | N2 | Essencial | ⚪ Não iniciado |
+| [OWASP Top 10 e OWASP API Security](sec-owasp.md) | N2 | Essencial | ⚪ Não iniciado |
+| [SQL Injection, XSS, CSRF e SSRF](sec-ataques.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Broken Access Control e CORS](sec-acesso.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Rate Limiting](sec-rate-limit.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Secrets Management](sec-secrets.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Threat Modeling](sec-threat.md) | N3 | Importante | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 9.2 Observabilidade
 
-| Tópico | Grupo | Importância | Status |
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Criptografia e hashing](sec-cripto.md) | Segurança | Essencial | ⚪ Não iniciado |
-| [OWASP Top 10 e OWASP API Security](sec-owasp.md) | Segurança | Essencial | ⚪ Não iniciado |
-| [SQL injection, XSS, CSRF e SSRF](sec-ataques.md) | Segurança | Essencial | ⚪ Não iniciado |
-| [Broken access control e CORS](sec-acesso.md) | Segurança | Essencial | ⚪ Não iniciado |
-| [Rate limiting e proteção contra abuso](sec-rate-limit.md) | Segurança | Essencial | ⚪ Não iniciado |
-| [Gestão de segredos](sec-secrets.md) | Segurança | Essencial | ⚪ Não iniciado |
-| [Logging estruturado, correlation ID e trace ID](obs-logs.md) | Observabilidade | Essencial | ⚪ Não iniciado |
-| [Métricas, monitoramento e alertas](obs-metricas.md) | Observabilidade | Essencial | ⚪ Não iniciado |
-| [Health checks](obs-health.md) | Observabilidade | Essencial | ⚪ Não iniciado |
+| [Logging, Correlation ID e Trace ID](obs-logs.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Metrics, Monitoring, Prometheus e Grafana](obs-metricas.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Distributed Tracing e OpenTelemetry](obs-tracing.md) | N3 | Importante | ⚪ Não iniciado |
+| [Health Checks e alertas](obs-health-alertas.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 9.3 Confiabilidade
 
-| Tópico | Grupo | Importância | Status |
+N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Threat modeling e desenvolvimento seguro](sec-desenvolvimento-seguro.md) | Segurança | Importante | ⚪ Não iniciado |
-| [Distributed tracing e OpenTelemetry](obs-tracing.md) | Observabilidade | Importante | ⚪ Não iniciado |
-| [Resiliência, tolerância a falhas e degradação](conf-resiliencia.md) | Confiabilidade | Essencial | ⚪ Não iniciado |
-| [SLA, SLO, SLI e error budget](conf-slo.md) | Confiabilidade | Importante | ⚪ Não iniciado |
-| [Backup e disaster recovery](conf-dr.md) | Confiabilidade | Importante | ⚪ Não iniciado |
-| [Incidentes e root cause analysis](conf-rca.md) | Confiabilidade | Importante | ⚪ Não iniciado |
+| [Resiliência, Fault Tolerance, Failover e Graceful Degradation](conf-resiliencia.md) | N3 | Essencial | ⚪ Não iniciado |
+| [SLA, SLO, SLI e Error Budget](conf-slo.md) | N3 | Importante | ⚪ Não iniciado |
+| [Backup e Disaster Recovery](conf-dr.md) | N3 | Importante | ⚪ Não iniciado |
+| [Root Cause Analysis](conf-rca.md) | N3 | Importante | ⚪ Não iniciado |
 
 ---
 

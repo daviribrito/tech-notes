@@ -1,30 +1,34 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Refatoração e dívida técnica
+# Refactoring
 
 > Melhorar o código sem mudar o comportamento.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [08 Engenharia de software e arquitetura](README.md) | Princípios de engenharia | N2 · Intermediário | Importante | ⚪ Não iniciado |
+| [08 Engenharia de software e arquitetura](README.md) | 8.1 Princípios de engenharia | N2 · Intermediário | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Refatoração e dívida técnica](https://daviribrito.github.io/portfolio/topico.html?id=es-refactoring)
+🔗 **No portfólio:** [Refactoring](https://daviribrito.github.io/portfolio/topico.html?id=es-refactoring)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Code smells
-- [ ] Técnicas de refatoração
-- [ ] Refatoração com testes
-- [ ] Technical debt e como priorizar
+- Code smells
+- Técnicas de refatoração
+- Refatoração protegida por testes
+- Dívida técnica
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Refatorar um trecho legado com testes protegendo.
+Evoluir código legado com segurança.
+
+## Critérios de conclusão
+
+- [ ] Refatorar um trecho legado com testes antes e depois.
 
 ## Pré-requisitos
 
-- [DRY, KISS, YAGNI e clean code](../engenharia/es-principios.md) · ⚪ Não iniciado
-- [Testes unitários com JUnit](../engenharia/tst-unitarios.md) · ⚪ Não iniciado
+- [Clean Code, DRY, KISS e YAGNI](../engenharia/es-clean-code.md) · 8.1 Princípios de engenharia · ⚪ Não iniciado
+- [Testes unitários com JUnit](../engenharia/tst-unitarios.md) · 8.4 Testes · ⚪ Não iniciado
 
 ## Minhas anotações
 

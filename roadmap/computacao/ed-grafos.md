@@ -4,31 +4,34 @@
 
 > Vértices e arestas para modelar relações.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Estruturas de dados | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.6 Estruturas de dados | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Grafos](https://daviribrito.github.io/portfolio/topico.html?id=ed-grafos)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Direcionados e não direcionados
-- [ ] Ponderados
-- [ ] Lista e matriz de adjacência
-- [ ] Ciclos e conectividade
+- Direcionados e não direcionados
+- Ponderados
+- Lista e matriz de adjacência
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Modelar dependências, rotas e redes de relacionamento.
+Modelar dependências, rotas e relacionamentos.
+
+## Critérios de conclusão
+
+- [ ] Representar um problema real como grafo nas duas formas.
 
 ## Pré-requisitos
 
-- [Listas encadeadas, pilhas e filas](../computacao/ed-listas.md) · ⚪ Não iniciado
-- [Matemática discreta](../matematica/mat-discreta.md) · ⚪ Não iniciado
+- [Listas encadeadas, stacks e queues](../computacao/ed-listas.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [Conjuntos, relações e funções](../matematica/mat-conjuntos.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
 
 ## Libera
 
-- [Algoritmos em grafos](../computacao/alg-grafos.md) · ⚪ Não iniciado
+- [BFS, DFS e ordenação topológica](../computacao/adv-grafos.md) · 2.5 Algoritmos e estruturas avançadas · ⚪ Não iniciado
 
 ## Minhas anotações
 

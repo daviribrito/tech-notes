@@ -1,35 +1,39 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Probabilidade e estatística
+# Probabilidade básica e condicional
 
-> Probabilidade e estatística descritiva para medir e interpretar sistemas.
+> Raciocinar sobre chance e incerteza.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [01 Matemática e fundamentos matemáticos](README.md) | Contínua e dados | N2 · Intermediário | Importante | ⚪ Não iniciado |
+| [01 Matemática aplicada à computação e backend](README.md) | 1.4 Probabilidade e estatística aplicada | N2 · Intermediário | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Probabilidade e estatística](https://daviribrito.github.io/portfolio/topico.html?id=mat-probabilidade)
+🔗 **No portfólio:** [Probabilidade básica e condicional](https://daviribrito.github.io/portfolio/topico.html?id=mat-probabilidade)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Eventos, probabilidade condicional e independência
-- [ ] Distribuições comuns
-- [ ] Média, mediana, percentis e desvio padrão
-- [ ] Paradoxo do aniversário
-- [ ] Amostragem e significância
+- Probabilidade básica
+- Eventos independentes
+- Probabilidade condicional
+- Valor esperado
+- Paradoxo do aniversário
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Ler latência por p95/p99, estimar falsos positivos de Bloom filter e avaliar testes A/B.
+Estimar colisões de IDs, falsos positivos de filtros e a chance de falhas em sequência.
+
+## Critérios de conclusão
+
+- [ ] Calcular a probabilidade de colisão de um ID aleatório curto.
 
 ## Pré-requisitos
 
-- [Combinatória](../matematica/mat-combinatoria.md) · ⚪ Não iniciado
+- [Princípios de contagem](../matematica/mat-contagem.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
 
 ## Libera
 
-- [Testes de performance, carga e estresse](../engenharia/tst-performance.md) · ⚪ Não iniciado
-- [Métricas, monitoramento e alertas](../confiabilidade/obs-metricas.md) · ⚪ Não iniciado
+- [Estatística descritiva e distribuições](../matematica/mat-estatistica-descritiva.md) · 1.4 Probabilidade e estatística aplicada · ⚪ Não iniciado
+- [Tries, Bloom Filters e estruturas especializadas](../computacao/ed-especializadas.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
 
 ## Minhas anotações
 

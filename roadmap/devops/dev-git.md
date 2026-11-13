@@ -4,23 +4,26 @@
 
 > Versionamento e colaboração.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [10 DevOps, infraestrutura e Cloud](README.md) | Ferramentas e ambientes | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [10 DevOps, infraestrutura e Cloud](README.md) | 10.1 Ferramentas | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Git e GitHub](https://daviribrito.github.io/portfolio/topico.html?id=dev-git)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Commits, branches e histórico
-- [ ] Merge e rebase
-- [ ] Pull requests e code review
-- [ ] Resolução de conflitos
-- [ ] Fluxos de trabalho
+- Commits, branches e histórico
+- Merge e rebase
+- Pull requests e code review
+- Resolução de conflitos
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Trabalhar com branches e PRs em todos os projetos.
+Trabalhar em equipe com histórico limpo.
+
+## Critérios de conclusão
+
+- [ ] Trabalhar com branches e PRs e resolver conflitos sem perder trabalho.
 
 ## Pré-requisitos
 
@@ -28,7 +31,7 @@ Nenhum: pode começar por aqui.
 
 ## Libera
 
-- [CI/CD e GitHub Actions](../devops/dev-cicd.md) · ⚪ Não iniciado
+- [CI/CD, GitHub Actions e Build Pipelines](../devops/dev-cicd.md) · 10.2 Containers e CI/CD · ⚪ Não iniciado
 
 ## Minhas anotações
 

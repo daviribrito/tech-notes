@@ -4,30 +4,33 @@
 
 > Eliminar redundância e saber quando reintroduzi-la.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [06 Banco de dados e persistência](README.md) | Fundamentos e modelagem | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [06 Banco de dados e persistência](README.md) | 6.1 Fundamentos e modelagem | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [Normalização e desnormalização](https://daviribrito.github.io/portfolio/topico.html?id=db-normalizacao)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] 1FN, 2FN, 3FN e BCNF
-- [ ] Anomalias de atualização
-- [ ] Quando desnormalizar
-- [ ] Tabelas de leitura
+- 1FN, 2FN, 3FN e BCNF
+- Anomalias de atualização
+- Quando desnormalizar
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Revisar um esquema e decidir onde desnormalizar por desempenho.
+Revisar esquemas e decidir onde desnormalizar por desempenho.
+
+## Critérios de conclusão
+
+- [ ] Normalizar um esquema até a 3FN e justificar uma desnormalização.
 
 ## Pré-requisitos
 
-- [Modelagem de dados](../banco/db-modelagem.md) · ⚪ Não iniciado
+- [Modelagem conceitual, lógica e física](../banco/db-modelagem-dados.md) · 6.1 Fundamentos e modelagem · ⚪ Não iniciado
 
 ## Libera
 
-- [Modelagem de histórico e auditoria](../banco/db-historico.md) · ⚪ Não iniciado
+- [Histórico e auditoria](../banco/db-historico.md) · 6.1 Fundamentos e modelagem · ⚪ Não iniciado
 
 ## Minhas anotações
 

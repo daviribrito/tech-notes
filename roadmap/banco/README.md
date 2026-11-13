@@ -6,58 +6,76 @@
 
 **Objetivo:** Modelar, consultar e otimizar dados com segurança, entendendo transações e concorrência a fundo.
 
-**Nível recomendado:** N1–N4 · **Prioridade:** Essencial · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Essencial · **Níveis:** N1–N4 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Pré-requisitos:** [02 Ciência da Computação e algoritmos](../computacao/README.md)
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=banco)
 
-**Pré-requisitos:** [02 Ciência da Computação e fundamentos computacionais](../computacao/README.md)
+## 6.1 Fundamentos e modelagem
 
-**Relação com:** [07 Engenharia Backend e desenvolvimento de APIs](../backend/README.md) · [11 Sistemas distribuídos e System Design](../distribuidos/README.md) · [09 Segurança, observabilidade e confiabilidade](../confiabilidade/README.md)
+N1–N3 · `░░░░░░░░░░` 0%
 
-## Critérios de conclusão
-
-- [ ] Modelar um domínio real até a forma normal adequada.
-- [ ] Escrever consultas com joins, CTEs e window functions e otimizá-las pelo plano de execução.
-- [ ] Explicar e reproduzir anomalias de concorrência e escolher o nível de isolamento certo.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [SGBD e modelo relacional](db-fundamentos.md) | Fundamentos e modelagem | Essencial | ⚪ Não iniciado |
-| [SQL: consulta e manipulação de dados](db-sql-basico.md) | SQL | Essencial | ⚪ Não iniciado |
+| [SGBD, bancos relacionais e chaves](db-relacional.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Modelagem conceitual, lógica e física](db-modelagem-dados.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Normalização e desnormalização](db-normalizacao.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Histórico e auditoria](db-historico.md) | N3 | Importante | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 6.2 SQL
 
-| Tópico | Grupo | Importância | Status |
+N1–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Modelagem de dados](db-modelagem.md) | Fundamentos e modelagem | Essencial | ⚪ Não iniciado |
-| [Normalização e desnormalização](db-normalizacao.md) | Fundamentos e modelagem | Essencial | ⚪ Não iniciado |
-| [Joins, agregações e subqueries](db-sql-joins.md) | SQL | Essencial | ⚪ Não iniciado |
-| [Índices](db-indices.md) | Índices e otimização | Essencial | ⚪ Não iniciado |
-| [Transações e ACID](db-acid.md) | Transações e concorrência | Essencial | ⚪ Não iniciado |
-| [Modelos NoSQL e MongoDB](db-nosql.md) | Bancos não relacionais | Importante | ⚪ Não iniciado |
-| [Redis](db-redis.md) | Bancos não relacionais | Essencial | ⚪ Não iniciado |
-| [Migrations e evolução de schema](db-migrations.md) | Administração e operação | Essencial | ⚪ Não iniciado |
-| [Connection pooling](db-pool.md) | Administração e operação | Essencial | ⚪ Não iniciado |
+| [Consultas e manipulação de dados](sql-basico.md) | N1 | Essencial | ⚪ Não iniciado |
+| [JOINs, agregações e subqueries](sql-joins.md) | N2 | Essencial | ⚪ Não iniciado |
+| [CTEs, Window Functions e consultas complexas](sql-avancado.md) | N3 | Importante | ⚪ Não iniciado |
+| [Views, Procedures e Triggers](sql-objetos.md) | N3 | Complementar | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 6.3 Índices e performance
 
-| Tópico | Grupo | Importância | Status |
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Modelagem de histórico e auditoria](db-historico.md) | Fundamentos e modelagem | Importante | ⚪ Não iniciado |
-| [SQL avançado: CTEs, window functions, views e procedures](db-sql-avancado.md) | SQL | Importante | ⚪ Não iniciado |
-| [Planos de execução e otimização de consultas](db-otimizacao.md) | Índices e otimização | Essencial | ⚪ Não iniciado |
-| [Níveis de isolamento e anomalias](db-isolamento.md) | Transações e concorrência | Essencial | ⚪ Não iniciado |
-| [Locks, MVCC e deadlocks](db-locks-mvcc.md) | Transações e concorrência | Essencial | ⚪ Não iniciado |
-| [Replicação, read replicas e sharding na prática](db-replicacao.md) | Bancos não relacionais | Importante | ⚪ Não iniciado |
-| [Backup, monitoramento e recuperação](db-operacao.md) | Administração e operação | Importante | ⚪ Não iniciado |
+| [Índices: tipos, cardinalidade e seletividade](idx-indices.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Execution Plans e Query Optimization](idx-planos.md) | N3 | Essencial | ⚪ Não iniciado |
 
-## N4 · Especialização
+## 6.4 Transações e concorrência
 
-| Tópico | Grupo | Importância | Status |
+N2–N4 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Write-Ahead Logging e durabilidade](db-wal.md) | Transações e concorrência | Importante | ⚪ Não iniciado |
+| [ACID, Commit e Rollback](tx-acid.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Isolation Levels e anomalias](tx-isolamento.md) | N3 | Essencial | ⚪ Não iniciado |
+| [Locks, Optimistic e Pessimistic Locking e deadlocks](tx-locks.md) | N3 | Essencial | ⚪ Não iniciado |
+| [MVCC e Write-Ahead Logging](tx-mvcc-wal.md) | N4 | Importante | ⚪ Não iniciado |
+
+## 6.5 Bancos NoSQL
+
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Modelos NoSQL](nosql-modelos.md) | N2 | Importante | ⚪ Não iniciado |
+| [Redis](nosql-redis.md) | N2 | Essencial | ⚪ Não iniciado |
+| [MongoDB](nosql-mongodb.md) | N2 | Complementar | ⚪ Não iniciado |
+| [Eventual Consistency, replicação e sharding no NoSQL](nosql-distribuicao.md) | N3 | Importante | ⚪ Não iniciado |
+
+## 6.6 Operação
+
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Migrations](op-migrations.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Connection Pooling](op-pool.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Replicação e Read Replicas](op-replicacao.md) | N3 | Importante | ⚪ Não iniciado |
+| [Backup, Restore e recuperação de falhas](op-backup.md) | N3 | Importante | ⚪ Não iniciado |
+| [Monitoramento de banco](op-monitoramento.md) | N3 | Importante | ⚪ Não iniciado |
 
 ---
 

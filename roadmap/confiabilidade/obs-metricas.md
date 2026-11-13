@@ -1,36 +1,40 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Métricas, monitoramento e alertas
+# Metrics, Monitoring, Prometheus e Grafana
 
 > Números que mostram a saúde do sistema.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [09 Segurança, observabilidade e confiabilidade](README.md) | Observabilidade | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [09 Segurança, observabilidade e confiabilidade](README.md) | 9.2 Observabilidade | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Métricas, monitoramento e alertas](https://daviribrito.github.io/portfolio/topico.html?id=obs-metricas)
+🔗 **No portfólio:** [Metrics, Monitoring, Prometheus e Grafana](https://daviribrito.github.io/portfolio/topico.html?id=obs-metricas)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Metrics e monitoring
-- [ ] Métodos RED e USE
-- [ ] Prometheus
-- [ ] Grafana
-- [ ] Alertas úteis
+- Metrics e Monitoring
+- Métodos RED e USE
+- Prometheus
+- Grafana
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Criar um painel com taxa, erros e duração por endpoint.
+Painéis com taxa, erros e duração por endpoint.
+
+## Critérios de conclusão
+
+- [ ] Criar um painel com taxa, erros e latência por percentil.
 
 ## Pré-requisitos
 
-- [Logging estruturado, correlation ID e trace ID](../confiabilidade/obs-logs.md) · ⚪ Não iniciado
-- [Probabilidade e estatística](../matematica/mat-probabilidade.md) · ⚪ Não iniciado
+- [Logging, Correlation ID e Trace ID](../confiabilidade/obs-logs.md) · 9.2 Observabilidade · ⚪ Não iniciado
+- [Estatística descritiva e distribuições](../matematica/mat-estatistica-descritiva.md) · 1.4 Probabilidade e estatística aplicada · ⚪ Não iniciado
 
 ## Libera
 
-- [SLA, SLO, SLI e error budget](../confiabilidade/conf-slo.md) · ⚪ Não iniciado
-- [Incidentes e root cause analysis](../confiabilidade/conf-rca.md) · ⚪ Não iniciado
+- [Health Checks e alertas](../confiabilidade/obs-health-alertas.md) · 9.2 Observabilidade · ⚪ Não iniciado
+- [SLA, SLO, SLI e Error Budget](../confiabilidade/conf-slo.md) · 9.3 Confiabilidade · ⚪ Não iniciado
+- [Root Cause Analysis](../confiabilidade/conf-rca.md) · 9.3 Confiabilidade · ⚪ Não iniciado
 
 ## Minhas anotações
 

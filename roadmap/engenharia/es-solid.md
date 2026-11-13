@@ -4,35 +4,38 @@
 
 > Cinco princípios de design orientado a objetos.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [08 Engenharia de software e arquitetura](README.md) | Princípios de engenharia | N2 · Intermediário | Essencial | ⚪ Não iniciado |
+| [08 Engenharia de software e arquitetura](README.md) | 8.1 Princípios de engenharia | N2 · Intermediário | Essencial | ⚪ Não iniciado |
 
 🔗 **No portfólio:** [SOLID](https://daviribrito.github.io/portfolio/topico.html?id=es-solid)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Single Responsibility
-- [ ] Open/Closed
-- [ ] Liskov Substitution
-- [ ] Interface Segregation
-- [ ] Dependency Inversion
+- Single Responsibility
+- Open/Closed
+- Liskov Substitution
+- Interface Segregation
+- Dependency Inversion
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Refatorar uma classe que faz coisas demais.
+Classes fáceis de estender e testar.
+
+## Critérios de conclusão
+
+- [ ] Refatorar uma classe que viola SOLID e explicar cada mudança.
 
 ## Pré-requisitos
 
-- [Interfaces, composição e associação](../linguagem/java-interfaces.md) · ⚪ Não iniciado
-- [DRY, KISS, YAGNI e clean code](../engenharia/es-principios.md) · ⚪ Não iniciado
+- [Interfaces, classes abstratas e composição](../linguagem/poo-contratos.md) · 3.2 Programação orientada a objetos · ⚪ Não iniciado
+- [Clean Code, DRY, KISS e YAGNI](../engenharia/es-clean-code.md) · 8.1 Princípios de engenharia · ⚪ Não iniciado
 
 ## Libera
 
-- [Injeção de dependência e inversão de controle](../engenharia/es-di.md) · ⚪ Não iniciado
-- [Padrões criacionais](../engenharia/es-patterns-criacionais.md) · ⚪ Não iniciado
-- [Padrões estruturais](../engenharia/es-patterns-estruturais.md) · ⚪ Não iniciado
-- [Padrões comportamentais](../engenharia/es-patterns-comportamentais.md) · ⚪ Não iniciado
+- [Dependency Injection e Inversion of Control](../engenharia/es-di.md) · 8.1 Princípios de engenharia · ⚪ Não iniciado
+- [Design Patterns: criacionais, estruturais e comportamentais](../engenharia/dp-gof.md) · 8.2 Design patterns · ⚪ Não iniciado
+- [Padrões de aplicação backend](../engenharia/dp-backend.md) · 8.2 Design patterns · ⚪ Não iniciado
 
 ## Minhas anotações
 

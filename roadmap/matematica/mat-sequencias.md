@@ -1,33 +1,39 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Sequências e progressões (PA e PG)
+# Sequências, PA e PG
 
-> Crescimento linear e geométrico, a base para entender somas em loops e backoff exponencial.
+> Crescimento linear e geométrico e as suas somas.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [01 Matemática e fundamentos matemáticos](README.md) | Base | N1 · Fundamentos | Importante | ⚪ Não iniciado |
+| [01 Matemática aplicada à computação e backend](README.md) | 1.2 Matemática aplicada a algoritmos | N1 · Fundamentos | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Sequências e progressões (PA e PG)](https://daviribrito.github.io/portfolio/topico.html?id=mat-sequencias)
+🔗 **No portfólio:** [Sequências, PA e PG](https://daviribrito.github.io/portfolio/topico.html?id=mat-sequencias)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Termo geral e soma da PA
-- [ ] Termo geral e soma da PG
-- [ ] Crescimento linear contra crescimento geométrico
-- [ ] Séries que aparecem em análise de algoritmos
+- Sequências numéricas
+- Progressão aritmética (PA)
+- Progressão geométrica (PG)
+- Soma de PA e de PG
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Calcular quantas operações um loop aninhado faz e quanto tempo um retry exponencial espera no total.
+Somar as iterações de loops e calcular a espera total de um retry com backoff exponencial.
+
+## Critérios de conclusão
+
+- [ ] Calcular a espera total de 6 retries começando em 100 ms e dobrando a cada tentativa.
 
 ## Pré-requisitos
 
-- [Aritmética e álgebra](../matematica/mat-aritmetica-algebra.md) · ⚪ Não iniciado
+Nenhum: pode começar por aqui.
 
 ## Libera
 
-- [Análise de algoritmos e recorrências](../computacao/cx-analise.md) · ⚪ Não iniciado
+- [Funções de crescimento, somatórios e recorrências](../matematica/mat-crescimento.md) · 1.2 Matemática aplicada a algoritmos · ⚪ Não iniciado
+- [Cálculos financeiros, juros e taxas](../matematica/mat-financeiro.md) · 1.3 Aritmética e cálculos computacionais · ⚪ Não iniciado
+- [Retry, Exponential Backoff, Circuit Breaker, Fallback e Bulkhead](../backend/int-resiliencia.md) · 7.6 Integrações · ⚪ Não iniciado
 
 ## Minhas anotações
 

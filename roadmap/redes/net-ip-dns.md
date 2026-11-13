@@ -1,35 +1,38 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Endereçamento IP, portas, DNS e DHCP
+# IP, portas e DNS
 
 > Como máquinas e serviços são encontrados.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [05 Redes de computadores e comunicação](README.md) | Fundamentos | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [05 Redes e protocolos de comunicação](README.md) | 5.1 Fundamentos e transporte | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Endereçamento IP, portas, DNS e DHCP](https://daviribrito.github.io/portfolio/topico.html?id=net-ip-dns)
+🔗 **No portfólio:** [IP, portas e DNS](https://daviribrito.github.io/portfolio/topico.html?id=net-ip-dns)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] IPv4, IPv6 e sub-redes
-- [ ] Portas
-- [ ] DNS: registros e resolução
-- [ ] DHCP
-- [ ] NAT
+- IPv4, IPv6 e sub-redes
+- Portas
+- DNS: registros e resolução
+- NAT
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Diagnosticar falhas de resolução de nome e de porta com dig, nslookup e curl.
+Diagnosticar falhas de resolução e de porta com dig e curl.
+
+## Critérios de conclusão
+
+- [ ] Resolver um problema de DNS com dig e explicar o TTL.
 
 ## Pré-requisitos
 
-- [Fundamentos de redes e modelos OSI e TCP/IP](../redes/net-fundamentos.md) · ⚪ Não iniciado
+- [Modelo OSI e TCP/IP](../redes/net-modelos.md) · 5.1 Fundamentos e transporte · ⚪ Não iniciado
 
 ## Libera
 
-- [TCP e UDP](../redes/net-tcp-udp.md) · ⚪ Não iniciado
-- [SSH](../redes/net-ssh.md) · ⚪ Não iniciado
+- [TCP, UDP e TCP Handshake](../redes/net-tcp-udp.md) · 5.1 Fundamentos e transporte · ⚪ Não iniciado
+- [SSH](../redes/net-ssh.md) · 5.2 Protocolos de aplicação · ⚪ Não iniciado
 
 ## Minhas anotações
 

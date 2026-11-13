@@ -1,33 +1,37 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Heaps e filas de prioridade
+# Heaps e Priority Queues
 
-> Acesso rápido ao menor ou maior elemento.
+> Acesso rápido ao menor ou ao maior elemento.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [02 Ciência da Computação e fundamentos computacionais](README.md) | Estruturas de dados | N2 · Intermediário | Importante | ⚪ Não iniciado |
+| [02 Ciência da Computação e algoritmos](README.md) | 2.6 Estruturas de dados | N2 · Intermediário | Importante | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Heaps e filas de prioridade](https://daviribrito.github.io/portfolio/topico.html?id=ed-heaps)
+🔗 **No portfólio:** [Heaps e Priority Queues](https://daviribrito.github.io/portfolio/topico.html?id=ed-heaps)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Min-heap e max-heap
-- [ ] Heapify
-- [ ] PriorityQueue
-- [ ] Top-K
+- Min-heap e max-heap
+- Heapify
+- Priority Queue
+- Top-K
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Agendar tarefas por prioridade e calcular os K maiores de um fluxo.
+Agendar tarefas por prioridade e calcular os maiores de um fluxo.
+
+## Critérios de conclusão
+
+- [ ] Implementar um heap e resolver um problema de top-K.
 
 ## Pré-requisitos
 
-- [Árvores binárias e árvores de busca](../computacao/ed-arvores.md) · ⚪ Não iniciado
+- [Árvores binárias e Binary Search Trees](../computacao/ed-arvores.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
 
 ## Libera
 
-- [Algoritmos de caminho mínimo](../computacao/alg-caminho-minimo.md) · ⚪ Não iniciado
+- [Dijkstra e algoritmos de caminho mínimo](../computacao/adv-caminho-minimo.md) · 2.5 Algoritmos e estruturas avançadas · ⚪ Não iniciado
 
 ## Minhas anotações
 

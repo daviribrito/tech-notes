@@ -1,34 +1,41 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Teoria dos conjuntos
+# Conjuntos, relações e funções
 
-> Conjuntos e operações, a base de SQL, de Sets e de relações.
+> A base matemática de joins, Sets e Maps.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [01 Matemática e fundamentos matemáticos](README.md) | Discreta | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
+| [01 Matemática aplicada à computação e backend](README.md) | 1.1 Raciocínio lógico e matemática discreta | N1 · Fundamentos | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Teoria dos conjuntos](https://daviribrito.github.io/portfolio/topico.html?id=mat-conjuntos)
+🔗 **No portfólio:** [Conjuntos, relações e funções](https://daviribrito.github.io/portfolio/topico.html?id=mat-conjuntos)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Conjuntos, pertinência e subconjuntos
-- [ ] União, interseção, diferença e complemento
-- [ ] Produto cartesiano
-- [ ] Relações e funções como conjuntos
+- Teoria dos conjuntos e operações
+- Produto cartesiano
+- Relações e as suas propriedades
+- Funções: injetora, sobrejetora e bijetora
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Raciocinar sobre joins, UNION/INTERSECT/EXCEPT e operações com Set em código.
+Raciocinar sobre joins, UNION, INTERSECT e EXCEPT e sobre Set e Map no código.
+
+## Critérios de conclusão
+
+- [ ] Explicar cada tipo de join como operação de conjuntos.
 
 ## Pré-requisitos
 
-- [Lógica matemática e proposicional](../matematica/mat-logica.md) · ⚪ Não iniciado
+- [Lógica proposicional e equivalências](../matematica/mat-logica.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
 
 ## Libera
 
-- [Matemática discreta](../matematica/mat-discreta.md) · ⚪ Não iniciado
-- [SGBD e modelo relacional](../banco/db-fundamentos.md) · ⚪ Não iniciado
+- [Indução matemática e recorrência](../matematica/mat-inducao.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
+- [Princípios de contagem](../matematica/mat-contagem.md) · 1.1 Raciocínio lógico e matemática discreta · ⚪ Não iniciado
+- [Grafos](../computacao/ed-grafos.md) · 2.6 Estruturas de dados · ⚪ Não iniciado
+- [SGBD, bancos relacionais e chaves](../banco/db-relacional.md) · 6.1 Fundamentos e modelagem · ⚪ Não iniciado
+- [JOINs, agregações e subqueries](../banco/sql-joins.md) · 6.2 SQL · ⚪ Não iniciado
 
 ## Minhas anotações
 

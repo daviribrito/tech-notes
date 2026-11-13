@@ -1,36 +1,40 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# Arquitetura e trade-offs
+# Escolha de tecnologias, arquitetura e trade-offs
 
 > Desenhar a solução e justificar cada escolha.
 
-| Área | Grupo | Nível | Importância | Status |
+| Área | Módulo | Nível | Prioridade | Status |
 |---|---|---|---|---|
-| [11 Sistemas distribuídos e System Design](README.md) | System Design | N4 · Especialização | Essencial | ⚪ Não iniciado |
+| [11 Sistemas distribuídos e System Design](README.md) | 11.5 System Design | N4 · Especialização | Essencial | ⚪ Não iniciado |
 
-🔗 **No portfólio:** [Arquitetura e trade-offs](https://daviribrito.github.io/portfolio/topico.html?id=sd-arquitetura)
+🔗 **No portfólio:** [Escolha de tecnologias, arquitetura e trade-offs](https://daviribrito.github.io/portfolio/topico.html?id=sd-arquitetura)
 
-## O que preciso aprender
+## Conteúdos
 
-- [ ] Escolha de tecnologias
-- [ ] Arquitetura de sistemas
-- [ ] Trade-offs
-- [ ] Alta disponibilidade e tolerância a falhas
-- [ ] Escalabilidade horizontal
+- Escolha de tecnologias
+- Arquitetura de sistemas
+- Trade-offs
+- Alta disponibilidade e tolerância a falhas
+- Escalabilidade
 
-## Como aplicar na prática
+## Aplicação no backend
 
-Desenhar a arquitetura de um sistema e defender as decisões.
+Propor arquiteturas e defender as decisões.
+
+## Critérios de conclusão
+
+- [ ] Desenhar a arquitetura de um sistema e defender cada trade-off.
 
 ## Pré-requisitos
 
-- [Requisitos e estimativas](../distribuidos/sd-requisitos.md) · ⚪ Não iniciado
-- [Cache distribuído](../distribuidos/ds-cache.md) · ⚪ Não iniciado
-- [Particionamento, sharding e consistent hashing](../distribuidos/ds-particionamento.md) · ⚪ Não iniciado
+- [Requisitos e estimativas](../distribuidos/sd-requisitos.md) · 11.5 System Design · ⚪ Não iniciado
+- [Distributed Caching](../distribuidos/ds-cache.md) · 11.3 Escalabilidade · ⚪ Não iniciado
+- [CAP Theorem, PACELC, ACID e BASE](../distribuidos/ds-cap.md) · 11.2 Teorias · ⚪ Não iniciado
 
 ## Libera
 
-- [Design de sistemas de larga escala](../distribuidos/sd-larga-escala.md) · ⚪ Não iniciado
+- [Sistemas de larga escala](../distribuidos/sd-larga-escala.md) · 11.5 System Design · ⚪ Não iniciado
 
 ## Minhas anotações
 

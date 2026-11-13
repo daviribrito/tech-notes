@@ -1,47 +1,68 @@
 <!-- GERADO a partir do portfólio. Estrutura em daviribrito/portfolio/data/roadmap.js, estudos em data/estudos.js -->
 
-# 01 · Matemática e fundamentos matemáticos
+# 01 · Matemática aplicada à computação e backend
 
-> As grandes áreas da matemática que sustentam algoritmos, análise de desempenho, dados e criptografia.
+> Só a matemática que ajuda a projetar e analisar sistemas: lógica, discreta, crescimento de algoritmos, cálculo numérico e estatística aplicada.
 
-**Objetivo:** Ter base para raciocinar sobre crescimento, probabilidade, lógica e estruturas discretas sem travar na notação.
+**Objetivo:** Raciocinar com precisão sobre condições, crescimento, números e métricas, sem estudar matemática que não se aplica ao backend.
 
-**Nível recomendado:** N1–N3 · **Prioridade:** Importante · **Progresso:** `░░░░░░░░░░` 0%
+**Prioridade:** Importante · **Níveis:** N1–N3 · **Progresso:** `░░░░░░░░░░` 0%
+
+**Prioridade dentro da área:** Alta para lógica, discreta e crescimento algorítmico; média para probabilidade e cálculos; complementar para o restante.
 
 🔗 [Abrir no portfólio](https://daviribrito.github.io/portfolio/area.html?id=matematica)
 
-**Relação com:** [02 Ciência da Computação e fundamentos computacionais](../computacao/README.md) · [11 Sistemas distribuídos e System Design](../distribuidos/README.md)
+## 1.1 Raciocínio lógico e matemática discreta
 
-## Critérios de conclusão
+N1–N2 · `░░░░░░░░░░` 0%
 
-- [ ] Explicar por que O(log n) cresce devagar usando logaritmos.
-- [ ] Resolver problemas de contagem e probabilidade simples.
-- [ ] Usar lógica proposicional e conjuntos para simplificar condições e consultas.
-
-## N1 · Fundamentos
-
-| Tópico | Grupo | Importância | Status |
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Aritmética e álgebra](mat-aritmetica-algebra.md) | Base | Essencial | ⚪ Não iniciado |
-| [Sequências e progressões (PA e PG)](mat-sequencias.md) | Base | Importante | ⚪ Não iniciado |
-| [Funções e logaritmos](mat-funcoes-log.md) | Base | Essencial | ⚪ Não iniciado |
-| [Lógica matemática e proposicional](mat-logica.md) | Discreta | Essencial | ⚪ Não iniciado |
-| [Teoria dos conjuntos](mat-conjuntos.md) | Discreta | Essencial | ⚪ Não iniciado |
+| [Lógica proposicional e equivalências](mat-logica.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Predicados e quantificadores](mat-predicados.md) | N1 | Importante | ⚪ Não iniciado |
+| [Conjuntos, relações e funções](mat-conjuntos.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Indução matemática e recorrência](mat-inducao.md) | N2 | Importante | ⚪ Não iniciado |
+| [Princípios de contagem](mat-contagem.md) | N2 | Importante | ⚪ Não iniciado |
 
-## N2 · Intermediário
+## 1.2 Matemática aplicada a algoritmos
 
-| Tópico | Grupo | Importância | Status |
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Matemática discreta](mat-discreta.md) | Discreta | Essencial | ⚪ Não iniciado |
-| [Combinatória](mat-combinatoria.md) | Discreta | Importante | ⚪ Não iniciado |
-| [Probabilidade e estatística](mat-probabilidade.md) | Contínua e dados | Importante | ⚪ Não iniciado |
+| [Sequências, PA e PG](mat-sequencias.md) | N1 | Importante | ⚪ Não iniciado |
+| [Potências e logaritmos](mat-potencias-log.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Funções de crescimento, somatórios e recorrências](mat-crescimento.md) | N2 | Essencial | ⚪ Não iniciado |
 
-## N3 · Avançado
+## 1.3 Aritmética e cálculos computacionais
 
-| Tópico | Grupo | Importância | Status |
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
 |---|---|---|---|
-| [Álgebra linear](mat-algebra-linear.md) | Contínua e dados | Complementar | ⚪ Não iniciado |
-| [Cálculo diferencial e integral](mat-calculo.md) | Contínua e dados | Complementar | ⚪ Não iniciado |
+| [Operações numéricas, porcentagem e arredondamento](mat-precisao.md) | N1 | Essencial | ⚪ Não iniciado |
+| [Representação numérica, overflow e ponto flutuante](mat-representacao-numerica.md) | N2 | Essencial | ⚪ Não iniciado |
+| [BigDecimal e valores monetários](mat-bigdecimal.md) | N2 | Essencial | ⚪ Não iniciado |
+| [Cálculos financeiros, juros e taxas](mat-financeiro.md) | N2 | Complementar | ⚪ Não iniciado |
+
+## 1.4 Probabilidade e estatística aplicada
+
+N2–N3 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Probabilidade básica e condicional](mat-probabilidade.md) | N2 | Importante | ⚪ Não iniciado |
+| [Estatística descritiva e distribuições](mat-estatistica-descritiva.md) | N2 | Importante | ⚪ Não iniciado |
+| [Métricas, latência e capacidade](mat-metricas.md) | N3 | Importante | ⚪ Não iniciado |
+
+## 1.5 Matemática complementar
+
+N1–N2 · `░░░░░░░░░░` 0%
+
+| Tópico | Nível | Prioridade | Status |
+|---|---|---|---|
+| [Noções de álgebra](mat-algebra.md) | N1 | Complementar | ⚪ Não iniciado |
+| [Noções de álgebra linear](mat-algebra-linear.md) | N2 | Complementar | ⚪ Não iniciado |
 
 ---
 
