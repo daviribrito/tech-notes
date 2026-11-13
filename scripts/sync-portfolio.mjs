@@ -1,6 +1,6 @@
 // Gera as notas do roadmap a partir do portfólio (daviribrito/portfolio).
 //
-// Fontes: data/roadmap.js (estrutura: áreas e tópicos), data/estudos.js
+// Fontes: data/roadmap.js (estrutura: áreas, módulos e tópicos), data/estudos.js
 // (progresso e anotações) e data/config.js do portfólio.
 // Para cada tópico escreve roadmap/<area>/<id>.md, mais o índice
 // roadmap/README.md e a seção "Roadmap" do README principal.
@@ -43,12 +43,19 @@ const cfg = await load("data/config.js", "SITE_CONFIG");
 const PASTA = (cfg.techNotes && cfg.techNotes.pasta) || "roadmap";
 
 const areas = R.areas || [];
+const modulos = R.modulos || [];
+const modById = Object.fromEntries(modulos.map((m) => [m.id, m]));
 const status = E.status || {};
 const conteudo = E.conteudo || {};
-const topicos = (R.topicos || []).map((t) => ({
-  pre: [], aprender: [], ...t, ...(conteudo[t.id] || {}),
-  status: ESTADOS[status[t.id]] ? status[t.id] : "nao-iniciado"
-}));
+// Hierarquia: Área → Módulo → Tópico. A área do tópico vem do módulo.
+const topicos = (R.topicos || []).map((t) => {
+  const m = modById[t.modulo] || { area: "", numero: "", nome: "" };
+  return {
+    pre: [], conteudos: [], criterios: [], ...t, ...(conteudo[t.id] || {}),
+    area: m.area, mod: m,
+    status: ESTADOS[status[t.id]] ? status[t.id] : "nao-iniciado"
+  };
+});
 const byId = Object.fromEntries(topicos.map((t) => [t.id, t]));
 const area = (id) => areas.find((a) => a.id === id) || { id, numero: "", nome: id };
 const concluido = (t) => t.status === "dominado" || t.status === "revisar";
@@ -57,19 +64,25 @@ const bar = (p) => "█".repeat(Math.round(p / 10)) + "░".repeat(10 - Math.rou
 const topicUrl = (id) => SITE + "topico.html?id=" + encodeURIComponent(id);
 const areaUrl = (id) => SITE + "area.html?id=" + encodeURIComponent(id);
 const nivelNome = (n) => n + " · " + ((R.niveis && R.niveis[n] && R.niveis[n].nome) || "");
+const modLabel = (t) => (t.mod.numero ? `${t.mod.numero} ${t.mod.nome}` : "");
+const niveisDe = (list) => {
+  const ns = ["N1", "N2", "N3", "N4"].filter((n) => list.some((t) => t.nivel === n));
+  return ns.length ? (ns.length === 1 ? ns[0] : `${ns[0]}–${ns[ns.length - 1]}`) : "";
+};
 
-// Validação: ids únicos e no formato usado nos caminhos.
+// Validação: ids únicos, no formato usado nos caminhos, e módulos existentes.
 const vistos = new Set();
 for (const t of topicos) {
   if (!/^[a-z0-9-]+$/.test(t.id)) throw new Error(`id inválido no roadmap: "${t.id}" (use letras minúsculas, números e hífen)`);
   if (vistos.has(t.id)) throw new Error(`id repetido no roadmap: "${t.id}"`);
+  if (!modById[t.modulo]) throw new Error(`módulo inexistente no tópico "${t.id}": "${t.modulo}"`);
   vistos.add(t.id);
 }
 
 function nota(t) {
   const a = area(t.area);
   const rel = (ids) => ids.map((id) => byId[id]).filter(Boolean)
-    .map((x) => `- [${x.nome}](../${x.area}/${x.id}.md) · ${ESTADOS[x.status]}`);
+    .map((x) => `- [${x.nome}](../${x.area}/${x.id}.md) · ${modLabel(x)} · ${ESTADOS[x.status]}`);
   const libera = topicos.filter((x) => x.pre.includes(t.id)).map((x) => x.id);
   const L = [
     GERADO,
@@ -78,19 +91,23 @@ function nota(t) {
     "",
     `> ${t.descricao}`,
     "",
-    "| Área | Grupo | Nível | Importância | Status |",
+    "| Área | Módulo | Nível | Prioridade | Status |",
     "|---|---|---|---|---|",
-    `| [${a.numero} ${a.nome}](README.md) | ${t.grupo} | ${nivelNome(t.nivel)} | ${IMPORTANCIA[t.importancia] || t.importancia} | ${ESTADOS[t.status]} |`,
+    `| [${a.numero} ${a.nome}](README.md) | ${modLabel(t)} | ${nivelNome(t.nivel)} | ${IMPORTANCIA[t.prioridade] || t.prioridade} | ${ESTADOS[t.status]} |`,
     "",
     `🔗 **No portfólio:** [${t.nome}](${topicUrl(t.id)})`,
     "",
-    "## O que preciso aprender",
+    "## Conteúdos",
     "",
-    ...t.aprender.map((x) => `- [ ] ${x}`),
+    ...t.conteudos.map((x) => `- ${x}`),
     "",
-    "## Como aplicar na prática",
+    "## Aplicação no backend",
     "",
-    t.aplicar,
+    t.aplicacao,
+    "",
+    "## Critérios de conclusão",
+    "",
+    ...t.criterios.map((x) => `- [${concluido(t) ? "x" : " "}] ${x}`),
     "",
     "## Pré-requisitos",
     "",
@@ -122,19 +139,17 @@ function indiceArea(a) {
     "",
     `**Objetivo:** ${a.objetivo}`,
     "",
-    `**Nível recomendado:** ${a.nivel} · **Prioridade:** ${IMPORTANCIA[a.prioridade] || a.prioridade} · **Progresso:** \`${bar(pct(tops))}\` ${pct(tops)}%`,
-    "",
-    `🔗 [Abrir no portfólio](${areaUrl(a.id)})`,
+    `**Prioridade:** ${IMPORTANCIA[a.prioridade] || a.prioridade} · **Níveis:** ${niveisDe(tops)} · **Progresso:** \`${bar(pct(tops))}\` ${pct(tops)}%`,
     ""
   ];
+  if (a.nota) L.push(`**Prioridade dentro da área:** ${a.nota}`, "");
   if (a.pre?.length) L.push("**Pré-requisitos:** " + a.pre.map((x) => `[${area(x).numero} ${area(x).nome}](../${x}/README.md)`).join(" · "), "");
-  if (a.relacoes?.length) L.push("**Relação com:** " + a.relacoes.map((x) => `[${area(x).numero} ${area(x).nome}](../${x}/README.md)`).join(" · "), "");
-  if (a.conclusao?.length) L.push("## Critérios de conclusão", "", ...a.conclusao.map((x) => `- [ ] ${x}`), "");
-  for (const n of ["N1", "N2", "N3", "N4"]) {
-    const doNivel = tops.filter((t) => t.nivel === n);
-    if (!doNivel.length) continue;
-    L.push(`## ${nivelNome(n)}`, "", "| Tópico | Grupo | Importância | Status |", "|---|---|---|---|");
-    for (const t of doNivel) L.push(`| [${t.nome}](${t.id}.md) | ${t.grupo} | ${IMPORTANCIA[t.importancia] || t.importancia} | ${ESTADOS[t.status]} |`);
+  L.push(`🔗 [Abrir no portfólio](${areaUrl(a.id)})`, "");
+  for (const m of modulos.filter((x) => x.area === a.id)) {
+    const doMod = tops.filter((t) => t.modulo === m.id);
+    L.push(`## ${m.numero} ${m.nome}`, "", `${niveisDe(doMod)} · \`${bar(pct(doMod))}\` ${pct(doMod)}%`, "",
+      "| Tópico | Nível | Prioridade | Status |", "|---|---|---|---|");
+    for (const t of doMod) L.push(`| [${t.nome}](${t.id}.md) | ${t.nivel} | ${IMPORTANCIA[t.prioridade] || t.prioridade} | ${ESTADOS[t.status]} |`);
     L.push("");
   }
   L.push("---", "", "[← Índice do roadmap](../README.md)", "");
@@ -147,16 +162,16 @@ function indice() {
     "",
     "# Roadmap · Backend Engineering",
     "",
-    `Notas geradas a partir do [roadmap do portfólio](${SITE}roadmap.html). Cada tópico tem a sua página no portfólio e a sua nota aqui.`,
+    `Notas geradas a partir do [roadmap do portfólio](${SITE}roadmap.html). Hierarquia: Área → Módulo → Tópico. Cada tópico tem a sua página no portfólio e a sua nota aqui.`,
     "",
     `**Progresso geral:** \`${bar(pct(topicos))}\` ${pct(topicos)}% · ${topicos.filter(concluido).length} de ${topicos.length} tópicos dominados`,
     "",
-    "| Área | Prioridade | Nível | Progresso | Tópicos |",
-    "|---|---|---|---|---|"
+    "| Área | Prioridade | Níveis | Módulos | Progresso | Tópicos |",
+    "|---|---|---|---|---|---|"
   ];
   for (const a of areas) {
     const tops = topicos.filter((t) => t.area === a.id);
-    L.push(`| [${a.numero} ${a.nome}](${a.id}/README.md) | ${IMPORTANCIA[a.prioridade] || a.prioridade} | ${a.nivel} | \`${bar(pct(tops))}\` ${pct(tops)}% | ${tops.filter(concluido).length}/${tops.length} |`);
+    L.push(`| [${a.numero} ${a.nome}](${a.id}/README.md) | ${IMPORTANCIA[a.prioridade] || a.prioridade} | ${niveisDe(tops)} | ${modulos.filter((m) => m.area === a.id).length} | \`${bar(pct(tops))}\` ${pct(tops)}% | ${tops.filter(concluido).length}/${tops.length} |`);
   }
   L.push("", "Estados: " + Object.values(ESTADOS).join(" · "), "");
   return L.join("\n");
